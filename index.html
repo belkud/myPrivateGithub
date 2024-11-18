@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
 
+<body>
+
+    <ol></ol> <!--! упорядоченный список -->
+    <ul></ul> <!--! неупорядоченный список -->
+    <dl></dl> <!--! список определений -->
+    
     <ol start="10" reversed>
         <li value="8">желтый</li>
         <li>зеленый</li>
         <li>красный</li>
         <li>серый</li>
         <li>фиолетовый</li>
-      </ol>
-      
-      <ul>
+    </ol>
+
+    <ul>
         <li>один</li>
         <li>два</li>
         <li>три</li>
         <li>четыре</li>
         <li>пять</li>
-      </ul>
-      
-      <ol>
+    </ul>
+
+    <ol>
         <li>один</li>
         <li>два</li>
         <li>три</li>
         <li>четыре</li>
         <li>пять</li>
-      </ol>
+    </ol>
+    <div>Создается список определений с помощью 3-х тегов:
+        ■ dl — definition list — основной, или родительский тег;
+        ■ dt — definition termin — вложенный тег;
+        ■ dd — definition description — вложенный тег.
+    </div>
+    
+    <dl></dl> <!--! список определений -->
+    
+    <dl>
+        <dt>Город:</dt>
+        <dd>Сочи</dd>
+        <dd>Москва</dd>
+        <dd>Петербург</dd>
+        <dt>Должность:</dt>
+        <dd>Заместитель руководителя</dd>
+        <dd>Руководитель</dd>
+        <dd>Главный специалист</dd>
+        <dt>Зарплата:</dt>
+        <dd>Низкая</dd>
+        <dd>Средняя</dd>
+        <dd>Высокая</dd>
+    </dl>
+
+<ol>
+    <li>Площадь
+        <ul>
+            <li>Дворцовая площадь</li>
+            <li>Рыночная площадь</li>
+        </ul>
+    </li>
+</ol>
+<style>
+    ol>li>ul>li {
+        background-color: green;
+        list-style: square;
+    }
+</style>
 
 
 </body>
+
 </html>
