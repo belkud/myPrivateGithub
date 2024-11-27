@@ -3,6 +3,8 @@ body {
     /* color: aliceblue; */
 }
 
+
+/*! прогресс бар */
 #object {
     border: 2px solid orange;
     width: 250px;
@@ -26,6 +28,7 @@ body {
     }
 }
 
+/*! сердце */
 #heart {
     width: 200px;
     margin: auto;
@@ -37,5 +40,46 @@ body {
 
 #heart:hover {
     width: 300px;
+    transition: 2s;
     filter: brightness(1);
+    /* filter: drop-shadow(0px 0px 15px red); */
+}
+
+
+
+.moveImage {
+    width: 100px;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.calc {
+    margin-left: 5%;
+    animation: animCalc 2s alternate 0s forwards;
+}
+.book {
+    margin-left: 20%;
+    animation: animCalc 2s alternate .5s forwards;
+}
+.pallete {
+    margin-left: 30%;
+    animation: animCalc 2s alternate 1s forwards;
+}
+.pencil {
+    margin-left: 40%;
+    animation: animCalc 2s alternate 1.5s forwards;
+}
+.paper {
+    margin-left: 50%;
+    animation: animCalc 2s alternate 2s forwards;
+}
+
+@keyframes animCalc {
+    from {
+        margin-top: 300px;
+    }
+    to {
+        margin-top: 0px;
+        rotate: 360deg;
+    }
 }
