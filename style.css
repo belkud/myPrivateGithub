@@ -51,15 +51,17 @@ body {
     width: 100px;
     position: absolute;
     margin-top: 300px;
+    animation: animCalc 2s alternate 0s forwards;
 }
 
 .calc {
     margin-left: 5%;
-    animation: animCalc 2s alternate 0s forwards;
+    transform-origin: 0%;
 }
 .book {
     margin-left: 20%;
     animation: animCalc 2s alternate .5s forwards;
+    /* animation-delay: 1.5s; */
 }
 .pallete {
     margin-left: 30%;
