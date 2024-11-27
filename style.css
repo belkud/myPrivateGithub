@@ -26,3 +26,16 @@ body {
     }
 }
 
+#heart {
+    width: 200px;
+    margin: auto;
+    
+    transition: 2s;
+    filter: brightness(.1);
+    color: yellow;
+}
+
+#heart:hover {
+    width: 300px;
+    filter: brightness(1);
+}
