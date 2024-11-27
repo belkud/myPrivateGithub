@@ -51,12 +51,13 @@ body {
     width: 100px;
     position: absolute;
     margin-top: 300px;
-    animation: animCalc 2s alternate 0s forwards;
+    /* animation: animCalc 2s alternate 0s forwards; */
 }
 
 .calc {
     margin-left: 5%;
     transform-origin: 0%;
+    animation: animCalc 2s alternate 0s forwards;
 }
 .book {
     margin-left: 20%;
@@ -79,9 +80,10 @@ body {
 @keyframes animCalc {
     from {
         margin-top: 300px;
+        /* rotate: 0deg; */
     }
     to {
         margin-top: 0px;
-        rotate: 360deg;
+        /* rotate: 1080deg; */
     }
 }
