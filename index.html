@@ -22,7 +22,7 @@
 
     <button class="btn btn1">Button 1</button>
     <button class="btn btn2">Button 2</button>
-    <button class="btn ">Button 3</button>
+    <button class="btn btn3">Button 3</button>
     
 <style>
         
@@ -55,7 +55,12 @@
             /* transition: 1s  .04s ease;  */
             /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
             /* первое число длительность, второе задержка, третье временную функцию */
-         
+            
+
+
+
+            
+            /* не работает transform: perspective(200px) rotateY('30deg'); */
         
         }
 
@@ -68,32 +73,42 @@
             
             /* сразу несколько свойств */
             /* transform:rotate(45deg) scaleX(1.5); */
-
             /* transform: translate(10px, -100px); */
-
+            
             /* rotate - поворот */
             /* scale - увеличение */
             /* skew - наклон */
             /* translate - смещение */
             
-            transform-origin:120px 50%;
+            /* transform-origin:0px 50%; */
             /* определяет исходную точку начала трансформации. */
             
             /*! в ТРАНСФОРМЕ блок может как-то меняться, но положением которое он занимал - остаётся */
-            transition: .5s; 
+            transition: .5s;
+            
+
+            
+
+            /* position: absolute; */
+            /* z-index: 2; */
+            rotate: 45deg;
         }
 
         .btn2:hover {
-            rotate: 45deg;
+            /* может быть как с '+' так и с '-' */
+            
             /* display: none; */
-            visibility:hidden;
+            /* visibility:hidden; */
             /* opacity: 0; */
         }
 
-
         
-
+        .btn3 {
+            transform: scale(1.2, 1.8);
+        }
         
+        
+        /* АНИМАЦИЯ */
         
         
         
