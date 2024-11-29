@@ -8,13 +8,12 @@ body{
 
   @keyframes cloud {
     from{
-      margin-left: 0px;
-      background-position-x: 500px;
+      /* margin-left: 0px; */
+      /* background-position-x: 500px; */
     }
     to{
-        margin-left: 500px;
-        background-position-x: 0px;
-      /* background-position-x: 500px; */
+        /* margin-left: 500px; */
+        /* background-position-x: 0px; */
     }
   }
 
