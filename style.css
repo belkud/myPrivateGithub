@@ -1,9 +1,24 @@
-body {
-    background-color: rgb(182, 177, 177);
-    /* color: aliceblue; */
-}
+body{
+    background-color: #72a2e4;
+    background-image: url('public/cloud.png');
+    animation: cloud 10s linear infinite;
+    border: 2px solid red;
+    /* background-color: rgb(182, 177, 177); */
+  }
 
- 
+  @keyframes cloud {
+    from{
+      margin-left: 0px;
+      background-position-x: 500px;
+    }
+    to{
+        margin-left: 500px;
+        background-position-x: 0px;
+      /* background-position-x: 500px; */
+    }
+  }
+
+
 
  
 

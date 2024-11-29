@@ -31,9 +31,19 @@
             transition: 1s color, 15s background-color;  
             /* для каждого элемента по-отдельности */
             
-            transition: 1s;
+            transition: 1s ;
             /*переход для всех сразу */
+
+            transition: 1s 1s ; 
+            /* первое число длительность, второе задержка */
+
+            transition: 1s  .04s ease; 
+            /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
+            /* первое число длительность, второе задержка, третье временную функцию */
          }
+
+
+
         #btn:hover {
             background-color: greenyellow;
             color: black;
