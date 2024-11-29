@@ -1,51 +1,11 @@
 body {
-    background-color: rgb(64, 63, 63);
+    background-color: rgb(182, 177, 177);
     /* color: aliceblue; */
 }
 
+ 
 
-/*! прогресс бар */
-#object {
-    border: 2px solid orange;
-    width: 250px;
-}
-
-#square {
-    border: 2px solid orange;
-    background-color: orange;
-    width: 47px;
-    height: 40px;
-    /* animation: anim 3s steps(6) infinite; */
-    animation: anim 3s normal infinite;
-}
-
-@keyframes anim{
-    from {
-        
-    }
-    to {
-        margin-left: 203px;
-    }
-}
-
-/*! сердце */
-#heart {
-    width: 200px;
-    margin: auto;
-    
-    transition: 2s;
-    filter: brightness(.1);
-    color: yellow;
-}
-
-#heart:hover {
-    width: 300px;
-    transition: 2s;
-    filter: brightness(1);
-    /* filter: drop-shadow(0px 0px 15px red); */
-}
-
-
+ 
 
 .moveImage {
     width: 100px;
