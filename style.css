@@ -1,9 +1,8 @@
 body{
     background-color: #72a2e4;
-    background-image: url('public/cloud.png');
-    animation: cloud 10s linear infinite;
-    border: 2px solid red;
-    /* background-color: rgb(182, 177, 177); */
+    /* background-image: url('public/cloud.png'); */
+    /* animation: cloud 10s linear infinite; */
+    /* border: 2px solid red; */
   }
 
   @keyframes cloud {
