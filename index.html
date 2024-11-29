@@ -17,14 +17,31 @@
             промежуток времени)</li>
         <li>трансформации — transformation (перемещает, вращает, увеличива
             ет) элемент.</li>
-
     </ol>
-    <button class="btn">Button</button>
-    <button class="btn btn2">Button</button>
 
-    <style>
+<!-- ПОКАЗАТЬ ГОТОВЫЕ ФАЙЛЫ С АНИМАЦИЕЙ  -->
+
+    <button class="btn btn1">Button 1</button>
+    <button class="btn btn2">Button 2</button>
+    <button class="btn ">Button 3</button>
+    
+<style>
         
-        .btn2 {
+        .btn {
+            background-color: red;
+            width: 150px;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+
+
+        .btn1 {
             
             /* СМОТРЕТЬ ЧЕРЕЗ ПАНЕЛЬ РАЗРАБОТЧИКА */
             
@@ -33,27 +50,26 @@
             
             /* сразу несколько свойств */
             /* transform:rotate(45deg) scaleX(1.5); */
-        
-            transform: translate(10px, -100px);
+
+            /* transform: translate(10px, -100px); */
+
             /* rotate - поворот */
             /* scale - увеличение */
             /* skew - наклон */
             /* translate - смещение */
             
-            
-            /* transform-origin:100% 100%; */
+            transform-origin:120px 50%;
+            /* определяет исходную точку начала трансформации. */
             
             /*! в ТРАНСФОРМЕ блок может как-то меняться, но положением которое он занимал - остаётся */
+            transition: .5s; 
         }
 
-
-
-        .btn {
-            background-color: red;
-            width: 150px;
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
+        .btn1:hover {
+            rotate: 45deg;
+        }
+        
+        .btn2 {
             transition: 1s color, 3s background-color;  
                 
             /* СВОЙСТВА ТРАНЗИТИОН */
@@ -71,13 +87,10 @@
          
         
         }
+
         
 
         
-        .btn:hover {
-            background-color: greenyellow;
-            color: black;
-        }
         
         
         
