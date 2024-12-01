@@ -1,5 +1,5 @@
 body{
-    background-color: #72a2e4;
+    background-color: #19b921;
     /* background-image: url('public/cloud.png'); */
     /* animation: cloud 10s linear infinite; */
     /* border: 2px solid red; */
@@ -16,9 +16,35 @@ body{
     }
   }
 
+.cat, .dog {
+    border: 1px solid red;
+    width: 250px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+.text {
+    position: absolute;
+    width: 100px;
+    transform: translate(90px, -70px);
+    color: red;
+    font-size: 2em;
+}
+
+#container {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 528px;
+    height: 313px;
+}
+
+#container>div {
+}
 
 
- 
+
 
 .moveImage {
     width: 100px;
