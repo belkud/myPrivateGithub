@@ -16,6 +16,42 @@ body{
     }
   }
 
+
+  #container2 {
+      margin-top: 50px;
+      perspective: 800px;
+}
+#hello {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+#left, #right {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    border: 1px solid red;
+}
+#left{
+    transform-origin: left;
+}
+#right{
+    transform-origin: right;
+}
+#container2:hover>#left {
+    transition: 2s;
+    transform: rotateY(50deg);
+    
+}
+#container2:hover>#right {
+    transition: 2s;
+    transform: rotateY(-27deg);
+    
+}
+
   /* Задание с картинками */
   .cat, .dog {
     border: 1px solid red;
