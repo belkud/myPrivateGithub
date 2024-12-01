@@ -16,13 +16,17 @@ body{
     }
   }
 
-.cat, .dog {
+  /* Задание с картинками */
+  .cat, .dog {
     border: 1px solid red;
     width: 250px;
     height: 100px;
     margin: 0px;
-    padding: 0px;
+    transition: 1s;
+    margin-top: 0px;
 }
+
+
 .text {
     position: absolute;
     width: 100px;
@@ -33,15 +37,25 @@ body{
 
 #container {
     margin-top: 50px;
-
+    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
-    width: 528px;
+    width: 504px;
     height: 313px;
 }
 
 #container>div {
+    overflow: hidden;
 }
+.cat:hover, .dog:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+#container>div:hover {
+    filter: grayscale(.9);
+}
+/* Конец задания с картинками */
 
 
 
