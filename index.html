@@ -9,155 +9,166 @@
 </head>
 
 <body>
- 
+
     <ol> Эффект движущихся элементов на сайте, можно создать с помощью свойств CSS3:
-        <li>переходов — transition (изменение свойства за определённый 
+        <li>переходов — transition (изменение свойства за определённый
             промежуток времени)</li>
         <li>трансформации — transformation (перемещает, вращает, увеличива
-                ет) элемент.</li>
+            ет) элемент.</li>
         <li>анимации — animation;</li>
     </ol>
 
-<!-- ПОКАЗАТЬ ГОТОВЫЕ ФАЙЛЫ С АНИМАЦИЕЙ  -->
+    <!-- ПОКАЗАТЬ ГОТОВЫЕ ФАЙЛЫ С АНИМАЦИЕЙ  -->
 
-    <button class="btn">Button 1</button>
-    <button class="btn">Button 2</button>
-    <button class="btn">Button 3</button>
+    <button class="btn btn1">Button 1</button>
+    <button class="btn btn2">Button 2</button>
+    <button class="btn btn3">Button 3</button>
+
+<div style="display: flex;">
+
+        <div><img style="width: 250px; padding-right: 10px;" src="public/cat.jpg" alt=""></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+cupiditate corporis, cum eos asperiores doloribus perferendis deserunt dolorem sunt. Ab repellat eius suscipit
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
     
-<style>
-        
-        .btn {
-            background-color: red;
-            width: 150px;
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background-color: greenyellow;
-            color: black;
-        }
-
-                
-        .btn1 {
-            transition: 1s color, 3s background-color;  
-                
-            /* СВОЙСТВА ТРАНЗИТИОН */
-            /* для каждого элемента по-отдельности */
-            
-            /* transition: 1s ; */
-            /*переход для всех сразу */
-
-            /* transition: 1s 1s ;  */
-            /* первое число длительность, второе задержка */
-
-            /* transition: 1s  .04s ease;  */
-            /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
-            /* первое число длительность, второе задержка, третье временную функцию */
-            
+    123Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum molestiae nostrum blanditiis libero
+    cupiditate corporis, cum eos asperiores doloribus perferendis deserunt dolorem sunt. Ab repellat eius
+    suscipit quidem dignissimos!</div>
+</div>
 
 
+        <style>
+            .btn {
+                background-color: red;
+                width: 150px;
+                color: white;
+                padding: 5px;
+                border-radius: 5px;
+            }
 
-            
-            /* не работает transform: perspective(200px) rotateY('30deg'); */
-        
-        }
+            .btn:hover {
+                background-color: greenyellow;
+                color: black;
+            }
 
-        .btn2 {
-            
-            /* СМОТРЕТЬ ЧЕРЕЗ ПАНЕЛЬ РАЗРАБОТЧИКА */
-            
-            
-            /* СВОЙСТВА ТРАНСФОРМ */
-            
-            /* сразу несколько свойств */
-            /* transform:rotate(45deg) scaleX(1.5); */
-            /* transform: translate(10px, -100px); */
-            
-            /* rotate - поворот */
-            /* scale - увеличение */
-            /* skew - наклон */
-            /* translate - смещение */
-            
-            /* transform-origin:0px 50%; */
-            /* определяет исходную точку начала трансформации. */
-            
-            /*! в ТРАНСФОРМЕ блок может как-то меняться, но положением которое он занимал - остаётся */
-            transition: .5s;
-            
 
-            
+            .btn1 {
+                transition: 1s color, 3s background-color;
 
-            /* position: absolute; */
-            /* z-index: 2; */
-            rotate: 45deg;
-        }
+                /* СВОЙСТВА ТРАНЗИТИОН */
+                /* для каждого элемента по-отдельности */
 
-        .btn2:hover {
+                /* transition: 1s ; */
+                /*переход для всех сразу */
+
+                /* transition: 1s 1s ;  */
+                /* первое число длительность, второе задержка */
+
+                /* transition: 1s  .04s ease;  */
+                /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
+                /* первое число длительность, второе задержка, третье временную функцию */
+
+
+
+
+
+            }
+
+            .btn2 {
+
+                /* СМОТРЕТЬ ЧЕРЕЗ ПАНЕЛЬ РАЗРАБОТЧИКА */
+
+
+                /* СВОЙСТВА ТРАНСФОРМ */
+
+                /* сразу несколько свойств */
+                /* transform:rotate(45deg) scaleX(1.5); */
+                /* transform: translate(10px, -100px); */
+
+                /* rotate - поворот */
+                /* scale - увеличение */
+                /* skew - наклон */
+                /* translate - смещение */
+
+                transform-origin: 50% 100%;
+                /* определяет исходную точку начала трансформации. */
+
+                /*! в ТРАНСФОРМЕ блок может как-то меняться, но положением которое он занимал - остаётся */
+                transition: .5s;
+
+
+
+
+                /* position: absolute; */
+                /* z-index: 2; */
+            }
+
+            .btn2:hover {
+                rotate: 45deg;
+                background-color: blue !important;
+            }
+
             /* может быть как с '+' так и с '-' */
-            
+
             /* display: none; */
             /* visibility:hidden; */
             /* opacity: 0; */
-        }
 
-        
-        .btn3 {
-            transform: scale(1.2, 1.8);
-        }
-        
-        
-        /* АНИМАЦИЯ */
-        
-        
-        
+
+            .btn3 {
+                transform: scale(1.2, 1.8);
+            }
+
+
+            /* АНИМАЦИЯ */
         </style>
 
 
 
-<div id="container2">
-    <div id="hello">HELLO</div>
-    <div id="left"></div>
-    <div id="right"></div>
-</div>
+        <div id="container2">
+            <div id="hello">HELLO</div>
+            <div id="left"></div>
+            <div id="right"></div>
+        </div>
 
 
-<div id="container">
-    <div>
-        <img class="cat" src="public/cat.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
-    
-    <div>
-        <img class="dog" src="public/dog.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
-    
-    <div style="margin-top: -6px;">
-        <img class="dog" src="public/dog.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
+        <div id="container">
+            <div>
+                <img class="cat" src="public/dinozaur.jpg " alt="">
+                <div class="text">12345</div>
+            </div>
 
-    <div style="margin-top: -6px;">
-        <img class="cat" src="public/cat.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
-    
-    <div style="margin-top: -6px;">
-        <img class="cat" src="public/cat.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
+            <div>
+                <img class="dog" src="public/ddd2.jpg " alt="">
+                <div class="text">12345</div>
+            </div>
 
-    <div style="margin-top: -6px;">
-        <img class="dog" src="public/dog.jpg " alt="">
-        <div class="text">12345</div>
-    </div>
+            <div style="margin-top: -6px;">
+                <img class="dog" src="public/dog.jpg " alt="">
+                <div class="text">12345</div>
+            </div>
 
-</div>
+            <div style="margin-top: -6px;">
+                <img class="cat" src="public/ddd.gif " alt="">
+                <div class="text">12345</div>
+            </div>
 
+            <div style="margin-top: -6px;">
+                <img class="cat" src="public/cat.jpg " alt="">
+                <div class="text">12345</div>
+            </div>
 
+            <div style="margin-top: -6px;">
+                <img class="dog" src="public/dog.jpg " alt="">
+                <div class="text">12345</div>
+            </div>
 
+        </div>
 
 
 
@@ -166,10 +177,13 @@
 
 
 
- 
-<!--! анимация с предметами -->
 
-<!-- <div style=" height: 500px; border: 2px solid red;">
+
+
+
+        <!--! анимация с предметами -->
+
+        <!-- <div style=" height: 500px; border: 2px solid red;">
     <h2 style="text-transform: uppercase; text-align: center;">Hello my Site!</h2>
     <img class="moveImage book" src="public/book.png" alt="">
     <img class="moveImage calc" src="public/calc.png" alt="">
@@ -178,11 +192,11 @@
     <img class="moveImage pencil" src="public/pencil.png" alt="">
 </div> -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
 

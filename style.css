@@ -3,6 +3,11 @@ body{
     /* background-image: url('public/cloud.png'); */
     /* animation: cloud 10s linear infinite; */
     /* border: 2px solid red; */
+
+    background-image: url(public/cat.jpg);
+    /* background-size: cover; */
+    background-size: 100px;
+    background-repeat: repeat-;
   }
 
   @keyframes cloud {
@@ -17,9 +22,15 @@ body{
   }
 
 
-  #container2 {
-      margin-top: 50px;
-      perspective: 800px;
+
+/*! Задание с воротами */
+
+#container2 {
+    margin-top: 50px;
+    perspective: 800px;
+    background-color: red;
+    width: 500px;
+    border: 1px solid #000;
 }
 #hello {
     position: absolute;
@@ -36,23 +47,27 @@ body{
     border: 1px solid red;
 }
 #left{
-    transform-origin: left;
+    transform-origin: 0%;
 }
 #right{
-    transform-origin: right;
+    transform-origin: 100%;
 }
 #container2:hover>#left {
     transition: 2s;
-    transform: rotateY(50deg);
+    transform: rotateY(27deg);
     
 }
-#container2:hover>#right {
+#container2:hover #right {
     transition: 2s;
     transform: rotateY(-27deg);
     
 }
+/*! Конец задания с воротами */
 
-  /* Задание с картинками */
+
+
+
+  /*! Задание с картинками */
   .cat, .dog {
     border: 1px solid red;
     width: 250px;
@@ -84,18 +99,22 @@ body{
     overflow: hidden !important;
 }
 .cat:hover, .dog:hover{
-    transform: scale(1.05);
+    transform: scale(4.05);
     transition: 1s;
+    /* transform:rotateX(90deg); */
 }
 
 #container>div:hover {
     filter: grayscale(.9);
 }
-/* Конец задания с картинками */
+/*! Конец задания с картинками */
 
 
 
 
+
+
+/*! задание с летающими предметами */
 .moveImage {
     width: 100px;
     position: absolute;
@@ -136,3 +155,5 @@ body{
         /* rotate: 1080deg; */
     }
 }
+/*! Конец задания с летающими предметами */
+
