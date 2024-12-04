@@ -1,13 +1,16 @@
 body{
-    background-color: #19b921;
     /* background-image: url('public/cloud.png'); */
     /* animation: cloud 10s linear infinite; */
     /* border: 2px solid red; */
 
-    background-image: url(public/cat.jpg);
-    /* background-size: cover; */
-    background-size: 100px;
-    background-repeat: repeat-;
+
+    /* background: url(public/mountain.jpg) 100% 100%; */
+
+    background-image: url(public/mountain.jpg); /* вставка изображения */
+    /* background-size: 300px; */    /* размер изображения  или в пикселях*/
+    /* background-repeat:repeat-x; */     /* повтор изображения */
+
+    color: aliceblue;
   }
 
   @keyframes cloud {
