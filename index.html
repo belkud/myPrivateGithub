@@ -19,65 +19,58 @@
     </ol>
 
 
-<div class="catGalery">
-    <h2 style="text-align: center; color: aliceblue;">Cats Galery</h2>
-    <br>
+<div id="catsGallery">
+    <h2 style="text-align: center; color: aliceblue; margin-bottom: 50px;">Cats Gallery</h2>
     <iframe width="256" height="256" src="public/cats/cat_clean_256.png" frameborder="0"
     name="bigCat" style="border: none; display: block; width: 256px; margin: 10px auto;"><img src="public/cats/" alt=""></iframe>
     <!-- Тег <iframe> позволяет встраивать контент 
     (например, веб-страницы, видео) прямо в HTML-документ.  -->
-    <a href=""><img width="64" src="public/cats/cat_box_64.png" alt=""></a>
-    <a href=""><img width="64" src="public/cats/cat_cage_64.png" alt=""></a>
-    <a href=""><img width="64" src="public/cats/cat_clean_64.png" alt=""></a>
-    <a href=""><img width="64" src="public/cats/cat_eyes_64.png" alt=""></a>
-    <a href=""><img width="64" src="public/cats/cat_purr_64.png" alt=""></a>
-    <a href=""><img width="64" src="public/cats/cat_tied_64.png" alt=""></a>
+    
+    <a href="public/cats/cat_box_256.png" target="bigCat"><img src="public/cats/cat_box_64.png" alt=""></a>
+    <a href="public/cats/cat_cage_256.png" target="bigCat"><img src="public/cats/cat_cage_64.png" alt=""></a>
+    <a href="public/cats/cat_clean_256.png" target="bigCat"><img src="public/cats/cat_clean_64.png" alt=""></a>
+    <a href="public/cats/cat_eyes_256.png" target="bigCat"><img src="public/cats/cat_eyes_64.png" alt=""></a>
+    <a href="public/cats/cat_purr_256.png" target="bigCat"><img src="public/cats/cat_purr_64.png" alt=""></a>
+    <a href="public/cats/cat_tied_256.png" target="bigCat"><img src="public/cats/cat_tied_64.png" alt=""></a>
 </div>
 
 
 <style>
 
-  a {
-    display: inline-block;
-    padding: 5px;
-    border-radius: 10px;
-    color: black;
-    text-decoration: none;
-    background-color: aqua;
-    margin-bottom: 3px;
-  }
-
-
-  .catGalery {
+    
+  #catsGallery {
     border: 1px solid lightgray;
-    width: 470px;
-  }
-
-  .catGalery a {
-    display: inline-block;
-    padding: 0;
-    border-radius: 0px;
-    color: black;
-    text-decoration: none;
-    background-color: transparent;
-    margin-bottom: 0px;
-    border: 1px solid lightgrey;
+    width: 415px;
     margin-bottom: 100px;
   }
 
-  a:hover {
-      background-color: blue;
+  #catsGallery a {
+    display: inline-block;
+    width: 15.43%;
+    border: 1px solid lightgrey;
   }
 
-  .catGalery a:hover {
-      background-color: transparent;
+  a:hover {
+      border-color: blue !important;
   }
+
+
+  
     
 
 
 
 
 
+  a {
+    /* display: inline-block; */
+    /* padding: 5px; */
+    /* border-radius: 10px; */
+    /* color: black; */
+    /* text-decoration: none; */
+    /* background-color: aqua; */
+    /* margin-bottom: 3px; */
+}
 
 </style>
 
