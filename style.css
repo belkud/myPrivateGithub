@@ -4,34 +4,10 @@ body{
     /* background-image: url('public/cloud.png'); */
     /* animation: cloud 10s linear infinite; */
 
-
-
-    
-
-
-    /*! все свойства в одной строке */
-    /* background: url(public/mountain.jpg) fixed repeat-x; */
-    
-
     background-image: url(public/mountain.jpg); /* вставка изображения */
     background-attachment:fixed; /* прокрутка фона */
-    
-    /* background-size: 300px; */     /* размер изображения  или в пикселях*/
     background-size:cover;
-
-
-    
-    /* background-position: 50% 0%; */    /* распололжение изображения по оси Х и оси У */    
-    /* background-repeat:repeat-x; */     /* повтор изображения */
-    
-    
-    
-    
-    
-    /* ?????????? не показывать!!! */
-    background-clip: text;
-    -webkit-background-clip: text;
-    /* color: transparent !important; */
+    /* cursor:  url('public/dino_test.jpeg'), auto; */
 }
 
   html {
