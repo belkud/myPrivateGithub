@@ -7,7 +7,7 @@ body{
     background-image: url(public/mountain.jpg); /* вставка изображения */
     background-attachment:fixed; /* прокрутка фона */
     background-size:cover;
-    /* cursor:  url('public/dino_test.jpeg'), auto; */
+    cursor:  url('public/dino_test.jpeg'), auto;
 }
 
   html {
@@ -24,7 +24,21 @@ body{
         /* background-position-x: 0px; */
     }
   }
+#dinoz {
+    width: 200px;
+    animation: moveDino 3s ease alternate infinite;
+    border-radius: 5%;
+}
 
+@keyframes moveDino {
+    from {
+
+    }
+    to {
+        margin-top: 500px;
+        rotate: 360deg;
+    }
+}
 
 
 /*! Задание с воротами */
