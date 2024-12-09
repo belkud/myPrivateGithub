@@ -7,26 +7,21 @@ body{
     background-image: url(public/mountain.jpg); /* вставка изображения */
     background-attachment:fixed; /* прокрутка фона */
     background-size:cover;
-    cursor:  url('public/dino_test.jpeg'), auto;
+    /* cursor:  url('public/dino_test.jpeg'), auto; */
+    background:linear-gradient(white, blue, red) fixed;
+    
+    background: lightgrey;
 }
 
   html {
-      scroll-behavior:smooth; /* Плавный скролл при нажатии */
+      /* scroll-behavior:smooth;  */
+      /* Плавный скролл при нажатии */
   }
 
-  @keyframes cloud {
-    from{
-      /* margin-left: 0px; */
-      /* background-position-x: 500px; */
-    }
-    to{
-        /* margin-left: 500px; */
-        /* background-position-x: 0px; */
-    }
-  }
+ 
 #dinoz {
     width: 200px;
-    animation: moveDino 3s ease alternate infinite;
+    animation: moveDino 30s ease alternate infinite;
     border-radius: 5%;
 }
 
