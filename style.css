@@ -10,7 +10,7 @@ body{
     /* cursor:  url('public/dino_test.jpeg'), auto; */
     background:linear-gradient(white, blue, red) fixed;
     
-    background: lightgrey;
+    /* background: lightgrey; */
 }
 
   html {
