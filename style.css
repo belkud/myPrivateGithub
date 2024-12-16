@@ -11,38 +11,10 @@ body{
     background:linear-gradient(white, blue, red) fixed;
     
     background: lightgrey;
-    margin-top: 250px;
+    margin-left: 50px;
 }
 
-  html {
-      /* scroll-behavior:smooth;  */
-      /* Плавный скролл при нажатии */
-  }
 
-
-table {
-    border: 2px solid green;
-    /* border-collapse: collapse; */
-    /* border-spacing: 5px; */
-
-}
-th {
-    border: 2px solid red;
-    background-color: aqua;
-}
-
-td {
-    border: 2px solid blue;
-    color: aliceblue;
-    background-color: blueviolet;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#td_test {
-    /* height: 300px; */
-
-}
 
 
 
