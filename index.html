@@ -16,7 +16,7 @@
 
     <div class="city" style="background-image: url(public/city/road1.jpg);">
         <div class="city_inside">
-            <div>Inited States</div>
+            <div>United States</div>
             <h3>Project 1</h3>
             <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
                 et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
@@ -29,7 +29,7 @@
 
     <div class="city">
         <div class="city_inside">
-            <div>Inited States</div>
+            <div>United States</div>
             <h3>Project 2</h3>
             <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
                 et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
@@ -42,7 +42,7 @@
     
     <div class="city" style="background-image: url(public/city/road3.jpg);">
         <div class="city_inside">
-            <div>Inited States</div>
+            <div>United States</div>
             <h3>Project 3</h3>
             <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
                 et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
@@ -62,24 +62,44 @@
     position: relative;
     background-image: url(public/city/road2.jpg);
     overflow: hidden;
+    transition: 2s;
+    border-bottom: 5px solid aliceblue;
 }
-            
+
 .city_inside {
     height: 400px;
     width: 360px;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 200px;
     background-color: aliceblue;
     transition: 2s;
     padding: 20px;
+    text-align: center;
 }
 
 .city:hover .city_inside {
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 0px;
     color: aliceblue;
+    align-items: center;
 }
-    </style>
+
+.city h3 {
+    transition: 2s;
+    padding: 10px;
+    margin-left: -20px;
+    margin-right: -10px;
+}
+
+.city:hover h3 {
+    background-color: orange;
+}
+
+.city:hover {
+    border-bottom: 5px solid orange;
+}
+
+</style>
 
 
 
