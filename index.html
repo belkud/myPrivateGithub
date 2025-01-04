@@ -12,94 +12,356 @@
 
 
 
-<div style="display: flex; margin-top: 300px; margin-bottom: 300px; width: 1230px; border: 2px solid gray;">
+ <div id="fff" style="margin: 100px;
+     border:  2px solid red;
+     outline: 2px solid blue;
+     outline-offset: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia saepe sequi deserunt
+dolores enim perspiciatis distinctio. Autem dolores quod deserunt praesentium natus, ab eos, ducimus quasi,
+sapiente recusandae excepturi?
+Asperiores ipsa nihil est, nemo possimus cum nostrum accusantium fugiat laboriosam. Commodi optio voluptatem
+temporibus quibusdam qui fugit, ipsum, deserunt incidunt sit, rem pariatur minima porro sunt in maiores dolores.
+Pariatur cumque odit assumenda asperiores aliquam voluptatum, accusamus placeat minima sequi laborum optio
+repellat laudantium dicta soluta suscipit libero architecto molestiae earum? Illum veritatis debitis
+repellendus. Ullam impedit incidunt nisi?
+Dolores error similique voluptate itaque. Voluptatibus eaque animi repellat et laudantium aliquid ex illum ipsam
+ducimus possimus facilis dolor modi dolorem, dolore atque est fugit perferendis quo neque molestiae odit?
+Nulla autem totam aperiam ad nihil sequi voluptatibus dolore. Est eius earum sit quisquam aliquam laudantium
+recusandae maiores quaerat, accusantium, enim, natus temporibus corporis perferendis fugit eum exercitationem
+inventore saepe.</div>
 
-    <div class="city" style="background-image: url(public/city/road1.jpg);">
-        <div class="city_inside">
-            <div>United States</div>
-            <h3>Project 1</h3>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-            <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-        </div>
-    </div>
+<ul id="pseudoel">
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+</ul>
 
-    <div class="city">
-        <div class="city_inside">
-            <div>United States</div>
-            <h3>Project 2</h3>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-            <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-        </div>
-    </div>
+<style>
+    #pseudoel li:nth-child(odd):before{
+        content: '__';
+        color: transparent;
+        padding-right: 2px;
+        background-color: blue;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
     
-    <div class="city" style="background-image: url(public/city/road3.jpg);">
-        <div class="city_inside">
-            <div>United States</div>
-            <h3>Project 3</h3>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-            <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste, minima
-                et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
-                repellat iste?</div>
-            </div>
-        </div>
-</div>
-        
-        <style>
-.city {
-    height: 400px;
-    width: 400px;
-    margin: 10px;
-    position: relative;
-    background-image: url(public/city/road2.jpg);
-    overflow: hidden;
-    transition: 2s;
-    border-bottom: 5px solid aliceblue;
-}
+    #pseudoel li:nth-child(even):before{
+        content: '__';
+        color: transparent;
+        padding-right: 2px;
+        background-color: red;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    #pseudoel {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #pseudoel li{
+    }
 
-.city_inside {
-    height: 400px;
-    width: 360px;
-    position: absolute;
-    margin-top: 220px;
-    background-color: aliceblue;
-    transition: 2s;
-    padding: 20px;
-    text-align: center;
-}
+    #pseudoel li:nth-child(odd):hover{
+        background-color: red;
+        color: aliceblue;
+    }
 
-.city:hover .city_inside {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 0px;
-    color: aliceblue;
-    align-items: center;
-}
+    #pseudoel li:nth-child(even):hover{
+        background-color: blue;
+        color: aliceblue;
+    }
 
-.city h3 {
-    transition: 2s;
-    padding: 10px;
-    margin-left: -20px;
-    margin-right: -10px;
-}
 
-.city:hover h3 {
-    background-color: orange;
-}
 
-.city:hover {
-    border-bottom: 5px solid orange;
-}
 
 </style>
+
+
+
+
+
+
+
+    <img style="
+float: left;
+width: calc(30% );
+padding: 10px;
+margin-left: calc(10% - 20px);
+" src="public/city/road3.jpg" alt="">
+
+    <div>
+        <p class="bridge_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam vel culpa eos,
+            consectetur laborum expedita labore, atque excepturi asperiores perferendis sequi beatae perspiciatis alias?
+        </p>
+        <p class="bridge_text">Id quas omnis ullam assumenda officia commodi illo, delectus corrupti repellat pariatur?
+            Libero labore quasi culpa et aut nesciunt! Error fuga quia aspernatur velit. Corporis?</p>
+        <p class="bridge_text">Sunt, porro hic qui voluptatem optio corrupti molestias unde atque, aspernatur laboriosam
+            esse? Quos officiis non optio harum itaque sapiente iusto fugiat magni! Officiis, culpa.</p>
+        <p class="bridge_text">Maxime fugiat provident minus eos facere maiores dolorem? Reiciendis, veritatis quis rem
+            eos, architecto, voluptatibus vel eligendi iusto commodi rerum soluta. A adipisci ad voluptatum.</p>
+        <p class="bridge_text">Aspernatur deserunt explicabo incidunt quidem qui autem quae? Dolorem asperiores ipsum
+            deleniti esse pariatur neque quos quia officiis nobis, aspernatur quidem, ipsa fuga, saepe eveniet!</p>
+    </div>
+
+    <div>
+        <p class="bridge_text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam vel culpa eos,
+            consectetur laborum expedita labore, atque excepturi asperiores perferendis sequi beatae perspiciatis alias?
+        </p>
+        <p class="bridge_text2">Id quas omnis ullam assumenda officia commodi illo, delectus corrupti repellat pariatur?
+            Libero labore quasi culpa et aut nesciunt! Error fuga quia aspernatur velit. Corporis?</p>
+        <p class="bridge_text2">Sunt, porro hic qui voluptatem optio corrupti molestias unde atque, aspernatur
+            laboriosam esse? Quos officiis non optio harum itaque sapiente iusto fugiat magni! Officiis, culpa.</p>
+        <p class="bridge_text2">Maxime fugiat provident minus eos facere maiores dolorem? Reiciendis, veritatis quis rem
+            eos, architecto, voluptatibus vel eligendi iusto commodi rerum soluta. A adipisci ad voluptatum.</p>
+        <p class="bridge_text2">Aspernatur deserunt explicabo incidunt quidem qui autem quae? Dolorem asperiores ipsum
+            deleniti esse pariatur neque quos quia officiis nobis, aspernatur quidem, ipsa fuga, saepe eveniet!</p>
+    </div>
+
+    <div style="" id="bridge_text">Lorem ipsum dolor, sit amet <span
+            style="color: red; margin: 20px; width: 180px; border: 3px solid orange; padding: 20px;">consectetur
+            adipisicing</span> elit. Accusamus neque provident quis deserunt impedit at? Fugiat cumque quibusdam
+        doloremque. Assumenda quibusdam nisi a quae. Voluptate eveniet dolor eligendi sapiente repudiandae!
+        Autem ipsa totam mollitia ut repudiandae quo alias recusandae pariatur harum suscipit ipsam fuga corrupti
+        reprehenderit, saepe expedita, rem, consectetur facilis quaerat nostrum illo? Numquam repudiandae eos sed
+        quaerat officiis?
+        Officiis hic aut illo a maiores exercitationem at excepturi non rerum, error unde sed reiciendis praesentium
+        asperiores ab magnam facere. Aperiam blanditiis ea ipsam perspiciatis mollitia ut deserunt quo fuga.
+        Nesciunt pariatur nisi ces enim earum aliquid velit illum, neque vero cumque ipsum eligendi iusto ullam
+        inventore hic eaque quae deserunt quos sint sit voluptate vitae quis maxime provident? Eius, earum.
+        Aperiam possimus delectus, amet quas iste sunt totam maxime itaque, vero velit quam quasi magnam voluptatum
+        laborum excepturi quae numquam voluptatem! Obcaecati velit assumenda vero minus, ducimus adipisci deleniti
+        veniam.
+        Libero incidunt, est eos natus maiores sint blanditiis maxime sapiente unde asperiores vitae aut magni
+        temporibus rem odio labore accusantium earum? Perspiciatis rem consequatur voluptate facere necessitatibus
+        nostrum aut consectetur.
+        Aliquam, voluptatum vel nulla atque iure ab voluptas, tempore voluptatibus laudantium est sequi non iusto
+        laborum ipsum, rem hic maiores voluptates accusantium soluta tempora aliquid! Cumque asperiores expedita
+        quibusdam quisquam.
+        Excepturi laudantium magni nulla nesciunt voluptatibus pariatur neque voluptatem! Nesciunt expedita ratione
+        tempore veniam! Ipsam repellendus amet doloremque voluptatum quae id quis, dicta commodi voluptate atque facere
+        omnis? Temporibus, vero?
+        Fuga dolorem non in rerum nesciunt eveniet! Repudiandae iste porro nostrum autem, voluptatibus corrupti? Eius
+        illum optio architecto quos quasi eligendi qui modi reiciendis quisquam corrupti, unde aliquam minima doloribus.
+        Illum vero similique, dolorum pariatur iusto, fugit incidunt error voluptate sed quisquam qui beatae ad
+        laboriosam voluptas veniam ex! Recusandae veniam nihil sequi quidem id nisi quae beatae quaerat porro.
+        Libero laboriosam amet quibusdam provident ullam architecto dicta esse quam odit aut autem repudiandae totam
+        fugit, quas animi soluta minus, quisquam nostrum atque fuga nihil quos! Asperiores rerum quis reprehenderit.
+        Voluptate placeat, ipsum hic impedit nobis harum in ipsa quia sint quidem dolore deserunt dolorem. Fuga veniam a
+        sit doloribus quod incidunt, illo quo? Laboriosam placeat corporis minima pariatur officiis.
+        Quibusdam, doloribus debitis atque asperiores deleniti facilis aliquam beatae accusamus voluptas eius quae porro
+        ducimus pariatur at tenetur molestiae reprehenderit temporibus mollitia ea a maxime quis necessitatibus totam
+        sit! Itaque?
+        Sunt vel vitae atque explicabo ipsam nisi, amet soluta, perferendis eius doloremque velit commodi odit saepe
+        voluptate corrupti similique, animi maxime eum. Veniam, nisi sit corrupti rerum facere adipisci! Explicabo.
+        Ipsa assumenda molestiae facere placeat deleniti, alias veniam voluptates quia autem culpa in magni dolorem,
+        fugiat consectetur omnis consequatur quod modi sapiente animi excepturi mollitia perspiciatis dicta itaque.
+        Culpa, delectus?
+        Esse aliquam voluptate laboriosam, sapiente quam eum libero nostrum incidunt facilis fuga totam inventore sequi
+        enim accusantium natus commodi necessitatibus. Quidem autem nisi earum eius minus similique repudiandae incidunt
+        neque!
+        Totam eum iste quaerat qui vel aperiam harum repudiandae? Iure iste enim quas reprehenderit dolore libero ullam
+        rerum consectetur fuga officiis! Commodi fuga suscipit ratione quis inventore dolorem ea nihil.
+        Amet, rem possimus saepe animi perferendis eum aperiam. Dignissimos, minima, ab repellendus nobis, culpa quia
+        veniam consectetur cupiditate beatae dolorem vel fugiat nulla aperiam officia quibusdam explicabo molestiae quis
+        doloribus.
+        In adipisci, voluptatem iure cumque, laboriosam atque eius dicta maiores, sed obcaecati voluptate recusandae
+        mollitia. Voluptas nemo iure libero similique, quas inventore necessitatibus, facere, officiis qui repudiandae
+        dolorem tempora velit.
+        Maxime libero unde voluptas, impedit illo qui incidunt minima, ullam deserunt consectetur dolorem, perferendis
+        quia laborum recusandae officia earum saepe ratione obcaecati optio nam eius reiciendis autem minus tempore.
+        Dolorum!
+        Harum fugiat saepe non accusamus? Repellat dolore nobis saepe optio molestias magni illo reprehenderit
+        recusandae culpa quae ipsum repellendus deleniti nostrum obcaecati provident, amet, placeat neque id iure autem
+        perferendis?
+        Assumenda excepturi, ullam ea inventore possimus consectetur doloremque nostrum quasi nulla necessitatibus quia
+        earum voluptatem quae facilis pariatur commodi tempore totam atque? Itaque beatae cumque obcaecati quibusdam
+        laudantium accusamus consectetur!
+        Saepe voluptatem quibusdam cupiditate maxime dolores et unde nulla eaque atque. Recusandae odit repudiandae non
+        dolore ratione tempore accusantium illo delectus ad deserunt! Enim qui, distinctio sunt consectetur facere
+        omnis!
+        Laudantium ut non perferendis magnam molestias hic odio quas! Repellat cupiditate, autem et laboriosam amet sunt
+        beatae dignissimos? Tempore, quisquam ad veritatis dolorem quia odio earum impedit quaerat? Necessitatibus, qui?
+        At placeat optio ex obcaecati numquam deserunt sapiente laborum nemo quos dolorem! Qui vero vel odit nesciunt
+        ipsam, totam corporis iure, laboriosam magni enim doloremque excepturi, in consectetur recusandae? Delectus?
+        Omnis, rerum? Neque nam tenetur, debitis obcaecati modi ex culpa earum aliquam fuga eius quis omnis quas atque
+        non incidunt. Quibusdam, magni. Voluptates, odio ad voluptatem eligendi delectus velit placeat!
+        Hic libero, recusandae id ratione et excepturi repellat, error numquam placeat modi ullam, quaerat molestias
+        perspiciatis? Adipisci nesciunt nulla nam odit provident minus quasi sunt vero reprehenderit, veritatis
+        expedita? Itaque.
+        Qui facilis doloremque rem. Accusamus cum nobis vero consequuntur minima molestiae dolor voluptate non. Ipsam
+        temporibus odit laboriosam dolor laudantium! Voluptatem laborum temporibus perferendis eveniet velit eligendi
+        assumenda excepturi ullam?
+        Quo, quod. Eligendi libero voluptas numquam, eum quaerat nam soluta quos, pariatur tenetur amet incidunt dolorem
+        eaque, cumque reiciendis totam tempore perferendis accusantium corrupti. Incidunt possimus odit aperiam laborum
+        itaque.
+        Amet sed quibusdam optio minus libero corporis natus, accusamus sequi vel quas ipsa, harum laudantium pariatur
+        labore modi necessitatibus quod rem quam fugit fugiat cum velit minima nobis! Aut, similique!
+        Dignissimos saepe ipsa cumque ut aliquam vel enim magni, beatae explicabo optio doloribus quidem possimus itaque
+        expedita nostrum dolore dolorum! Ullam iusto officiis vel labore dolores nisi nihil, facilis temporibus.
+        Consectetur optio expedita voluptatem deleniti odit, laboriosam est explicabo quidem omnis nihil assumenda
+        similique odio necessitatibus voluptatum maiores fugiat nam sunt, officia eum libero facilis obcaecati repellat.
+        Quae, neque assumenda?
+        Eum reiciendis alias maiores assumenda quae voluptate, possimus fuga consectetur vero eaque! Beatae, corrupti
+        impedit, culpa at earum laboriosam rem inventore dignissimos esse incidunt autem. Obcaecati perferendis iusto at
+        molestias?
+        Nam eveniet, nisi nemo eos accusantium commodi possimus sed sequi dicta, cumque facilis aut laudantium. Vel ea
+        placeat rerum magni a quidem, voluptate neque quasi facilis quos, nesciunt, iusto id!
+        Reprehenderit a est obcaecati quod optio? Dolorum eum quis repellat eveniet at minima ullam commodi. Architecto
+        eum dolorem et, praesentium ea dignissimos sunt, facere corrupti at nisi commodi iusto deserunt!
+        Eum sit repellat quasi eos facilis nobis, delectus accusantium inventore doloribus dolores? Modi voluptas
+        inventore quia nulla, voluptates corrupti assumenda. Quibusdam ex molestias exercitationem quos quo voluptates
+        expedita voluptas ipsam?
+        Distinctio nostrum consectetur pariatur, nisi harum assumenda accusamus nulla iusto, necessitatibus, officia
+        ducimus dicta sapiente facere doloribus suscipit modi architecto veniam nobis. Possimus explicabo amet beatae
+        provident quibusdam, officiis reprehenderit.
+        Saepe et iste quam ex molestiae! Ab laboriosam eligendi porro illum odio ea reiciendis dolorem provident quis
+        inventore. Perferendis voluptatum, ducimus assumenda fugit fuga perspiciatis libero vitae et commodi sapiente.
+        Cupiditate dicta libero iure quae? Numquam, vitae incidunt? Tempore, vero eum. Laboriosam autem modi enim eos
+        perferendis, ratione non necessitatibus quasi blanditiis? Expedita, veniam quisquam blanditiis quo distinctio
+        illum perferendis?
+        Est magni quod eius ipsa at autem pariatur, incidunt tempora atque sapiente nam sint consequuntur deleniti
+        voluptatum expedita dolorem facilis iure fugit fuga error vitae aperiam commodi eligendi. Porro, culpa?
+        Inventore laudantium animi officia laboriosam! Recusandae possimus aut et numquam dolorum nobis quos beatae
+        error tempore voluptatum magni hic ratione, neque nostrum dolore atque reiciendis tempora, reprehenderit ut.
+        Aspernatur, ut.
+        Quod alias quae ipsum, provident, consequatur fuga ut aliquam beatae, itaque atque expedita a ipsam. Dicta unde
+        molestias quasi aliquid, dignissimos architecto amet, asperiores commodi necessitatibus facilis libero voluptas
+        eum?
+        Perspiciatis nihil assumenda voluptatem exercitationem veniam. Reiciendis vero optio eius rerum. Saepe
+        accusantium sit magnam, dolor esse soluta porro quisquam deserunt, sint ea cum impedit! Aliquid exercitationem
+        doloremque adipisci optio?
+        Inventore expedita exercitationem neque dolorem modi molestiae ullam ipsa cupiditate quia consequuntur sed iure,
+        perspiciatis voluptas, molestias harum, distinctio voluptatem. Quis hic cum, totam ducimus sapiente est eum ex
+        voluptas.
+        Pariatur dolore officiis nemo quod, nihil expedita repudiandae nostrum architecto totam consectetur tempore
+        dolor reiciendis magnam, tempora ut quae quos labore beatae. Tenetur error aliquid dolore omnis magnam sit esse.
+        Esse dolore nemo vitae veniam asperiores suscipit laborum dolorum facere officia itaque? Fugiat, quod. Quo odio
+        laborum, quidem modi itaque vero quisquam. Quisquam repudiandae explicabo sequi hic iusto? Quam, beatae.
+        Soluta blanditiis dicta laboriosam consectetur quidem laudantium sint! Vitae eius sunt sapiente quia ad
+        perspiciatis adipisci dolorum, provident aliquid? Iure expedita recusandae ut cumque aliquid mollitia error
+        nesciunt minima aperiam?
+        Totam, dignissimos. Atque, laboriosam sit expedita exercitationem, accusamus culpa ut voluptatem, pariatur
+        eligendi quam nulla maiores necessitatibus numquam ea? Sit ex delectus cumque harum incidunt voluptas velit.
+        Praesentium, consequatur minus.
+        Qui voluptas itaque suscipit non repellendus maxime labore dolorum a est tempora nihil, doloremque iste porro!
+        Debitis nihil incidunt dolores architecto iusto quam sapiente. At incidunt quasi nisi tempore delectus?
+        Et dolorem deleniti quas eaque magnam consequuntur aliquid id harum distinctio omnis. Facilis exercitationem
+        quod non quibusdam? Dolorum officiis nisi est, tempore porro accusantium saepe maxime, aut alias minus omnis?
+        Architecto maxime eum earum molestiae, mollitia commodi facere odio in odit exercitationem dignissimos,
+        molestias nesciunt illum. Qui eos saepe explicabo, natus dolorum dolor. Odio quidem blanditiis dolor, esse
+        facilis molestias.
+        Tempora deleniti neque doloribus aut suscipit ducimus ipsa ea, magni aspernatur doloremque officiis aliquam
+        voluptatem at quo deserunt odio magnam vitae, unde nihil eius beatae molestias quae quia! Minima, illum!
+        Autem voluptatem pariatur tempora quod fugiat quis consectetur doloremque, dolor, architecto aspernatur expedita
+        quasi aut facilis atque et soluta odit? Hic minima at ad officiis aperiam beatae tempora ratione vero?
+        Aspernatur molestiae quas in accusantium dolor fugiat! Optio omnis architecto quaerat excepturi repudiandae
+        incidunt cupiditate magni, sequi ex. Necessitatibus quis cum distinctio repellat, odit porro minima laboriosam
+        accusamus ullam aperiam.</div>
+
+
+
+
+
+    <div style="display: flex; margin-top: 300px; margin-bottom: 300px; width: 1230px; border: 2px solid gray;">
+
+        <div class="city" style="background-image: url(public/city/road1.jpg);">
+            <div class="city_inside">
+                <div>United States</div>
+                <h3>Project 1</h3>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste,
+                    minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+                <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                    doloribus reiciendis. Iste, minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+            </div>
+        </div>
+
+        <div class="city">
+            <div class="city_inside">
+                <div>United States</div>
+                <h3>Project 2</h3>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste,
+                    minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+                <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                    doloribus reiciendis. Iste, minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+            </div>
+        </div>
+
+        <div class="city" style="background-image: url(public/city/road3.jpg);">
+            <div class="city_inside">
+                <div>United States</div>
+                <h3>Project 3</h3>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, doloribus reiciendis. Iste,
+                    minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+                <div style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                    doloribus reiciendis. Iste, minima
+                    et. Optio autem, corporis quae hic aut id praesentium, totam, ratione
+                    repellat iste?</div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .city {
+            height: 400px;
+            width: 400px;
+            margin: 10px;
+            position: relative;
+            background-image: url(public/city/road2.jpg);
+            overflow: hidden;
+            transition: 2s;
+        }
+
+        .city_inside {
+            height: 400px;
+            width: 360px;
+            position: absolute;
+            margin-top: 220px;
+            background-color: aliceblue;
+            transition: 2s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .city:hover .city_inside {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-top: 0px;
+            color: aliceblue;
+            align-items: center;
+        }
+
+        .city h3 {
+            transition: 2s;
+            padding: 10px;
+            margin-left: -20px;
+            margin-right: -10px;
+        }
+
+        .city:hover h3 {
+            background-color: orange;
+        }
+
+        .city:hover {
+            border-bottom: 5px solid orange;
+        }
+    </style>
 
 
 

@@ -15,7 +15,9 @@ body{
     cursor: pointer;
 }
 
-
+* {
+font-size: 1em;
+}
 
 
 
@@ -195,3 +197,88 @@ body{
 }
 /*! Конец задания с летающими предметами */
 
+
+
+
+.bridge_text::first-line {
+    color: red;
+    padding: 10px;
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid red;
+    background-color: bisque;
+}
+
+.bridge_text:nth-child(even) {
+    padding: 10px;
+    color: green;
+}
+
+.bridge_text:nth-child(odd)::before {
+    content: '';
+    background-color: goldenrod;
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(public/city/road3.jpg);
+    background-size: contain;
+}
+
+
+.bridge_text:hover{
+    transition: 1s;
+    color: aqua;
+}
+
+.bridge_text2:nth-last-child(2){
+    color: red;
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 10px;
+}
+
+.bridge_text:only-child {
+    text-transform: capitalize;
+    background-color: blue;
+}
+
+#test_child {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px;
+    box-sizing: border-box;
+    /* width: 500px; */
+    position: relative;
+}
+
+/* 
+#test_child div:nth-child(even){
+    border: 2px solid red;
+    width: 1000px;
+    position: relative;
+} */
+
+#mark_child:nth-of-type(even) {
+    border: 2px solid red;
+    width: 300px;
+    float: left;
+}
+
+#mark_child:nth-of-type(odd) {
+    border: 2px solid blue;
+    width: 300px;
+    float: right;
+}
+
+#fff {
+    width: calc(50% - 50px);
+    padding: 30px;
+    /* box-sizing: border-box; */
+}
+
+#fff:before, #fff:after {
+    content: '\bb ';
+    font-size: 2em;
+ }
