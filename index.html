@@ -30,15 +30,17 @@ recusandae maiores quaerat, accusantium, enim, natus temporibus corporis perfere
 inventore saepe.</div>
 
 <ul id="pseudoel">
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
+    <li data-price="23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati blanditiis excepturi incidunt. Maxime, fugit exercitationem nemo optio delectus, recusandae, id eum ducimus in vero cumque corporis consectetur modi laborum!</li>
 </ul>
+
+<input type="button" value="Button">
 
 <style>
     #pseudoel li:nth-child(odd):before{
@@ -48,8 +50,15 @@ inventore saepe.</div>
         background-color: blue;
         border-radius: 50%;
         margin-right: 5px;
+        width: 10px;
+        height: 10px;
     }
     
+    #pseudoel li:nth-child(odd):before:hover{
+        content: attr(data-price);
+        
+    }
+
     #pseudoel li:nth-child(even):before{
         content: '__';
         color: transparent;
@@ -60,21 +69,29 @@ inventore saepe.</div>
     }
     
     #pseudoel {
+        width: 900px;
         list-style-type: none;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         gap: 10px;
     }
     
     #pseudoel li{
+        font-size: 1.2em;
+        /* width: 430px; */
+        border: 1px solid #000;
+        padding: 5px;
     }
-
+    
     #pseudoel li:nth-child(odd):hover{
+        content: attr(data-price);
         background-color: red;
         color: aliceblue;
     }
-
+    
     #pseudoel li:nth-child(even):hover{
+        content: attr(data-price);
         background-color: blue;
         color: aliceblue;
     }
@@ -1478,6 +1495,7 @@ background-color: rgb(240, 248, 255, .2);">
     <br>
     <br>
     <br>
+
 
 
 
