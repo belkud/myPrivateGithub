@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+    background-color: yellow !important;
 }
 #pseudoel li{
     font-size: 1.2em;
