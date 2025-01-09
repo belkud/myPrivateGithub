@@ -1,0 +1,19 @@
+body {
+    background-color:lightgray;
+    background-color:red;
+
+}
+
+#hide_block {
+    display: none;
+}
+
+#border_menu {
+    flex-direction: column;
+}
+
+#bottom_aside div{
+    width: 250px;
+    flex-direction: row;
+    gap: 10px;
+}

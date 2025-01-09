@@ -435,62 +435,16 @@ justify-content: center
     border: 1px solid #000;
 }
 
-
-
+#bottom_aside div div:nth-last-child(1){
+    background-color: pink;
+}
 
 @media screen and (max-width:1024px){
-    body {
-        background-color:green;
-
-    }
-    
-    #first_input {
-        display: block !important;
-    }
-
-    #second_input {
-        display: none;
-    }
-
-    #bottom_aside{
-        display: flex;
-        flex-direction: row;
-        padding-right: 10px;
-        justify-content: center;
-    }
-    
-    #bottom_aside div{
-        width: 50px;
-        flex-direction: column;
-    }
-    
-    
-    #bottom_aside div div{
-        width: 100%;
-    }
-    
+   
 }
 
-@media screen and (max-width:768px) {
-    body {
-        background-color:orange;
-    
-    }
-    
-    #hide_block {
-        display: none;
-    }
 
-    #border_menu {
-        flex-direction: column;
-    }
 
-    #bottom_aside div{
-        width: 250px;
-        flex-direction: row;
-        gap: 10px;
-    }
 
-}
 
 

@@ -1,0 +1,29 @@
+body {
+    background-color:goldenrod;
+
+}
+
+#first_input {
+    display: block !important;
+}
+
+#second_input {
+    display: none;
+}
+
+#bottom_aside{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+#bottom_aside div{
+    width: 50px;
+    flex-direction: column;
+}
+
+
+#bottom_aside div div{
+    width: 100%;
+}
