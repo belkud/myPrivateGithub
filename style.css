@@ -384,6 +384,16 @@ body {
     padding: 20px;
 }
 
+#border_content a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+#border_content a:hover {
+    color: lightcyan;
+}
+    
 #logo {
     border: 3px solid #000;
     width: 100px;
@@ -398,7 +408,7 @@ body {
 }
 #border_content input {
     width: 100px;
-    border: 3px solid red;
+    border: 3px solid;
 }
 
 #border_content main {
@@ -439,9 +449,8 @@ justify-content: center
     background-color: pink;
 }
 
-@media screen and (max-width:1024px){
-   
-}
+
+
 
 
 

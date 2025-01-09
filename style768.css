@@ -1,6 +1,6 @@
 body {
-    background-color:lightgray;
-    background-color:red;
+    /* background-color:lightgray; */
+    background-color:green;
 
 }
 
@@ -17,3 +17,4 @@ body {
     flex-direction: row;
     gap: 10px;
 }
+
