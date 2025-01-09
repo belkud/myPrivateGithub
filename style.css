@@ -1,5 +1,6 @@
 @import url(max600.css) screen and (max-width:600px);
 
+
 body {
     /*! бегущие облака */
     /* background-color: aqua; */
@@ -310,7 +311,7 @@ body {
 
 
 
-/* @media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
     body {
         background-color: aliceblue;
     }
@@ -321,7 +322,7 @@ body {
         border: 1px solid #000;
         padding: 5px;
     }
- }
+}
 
 @media screen and (max-width:800px) {
     body {
@@ -334,14 +335,14 @@ body {
         border: 1px solid #000;
         padding: 5px;
         display: none;
-    } */
+    }
 
     /* #mountain_id {
         width: 500px;
         height: 300px;
         overflow: scroll;
     } */
-/* } */
+}
 
 /* @media screen and (max-width:600px) {
 
@@ -354,7 +355,16 @@ body {
 }
 
 
+#numm {
+    color: orange;
+}
 
+@media print {
+    #test_bridge {
+        border: 12px solid green;
+        display: none;
+    }
+}
 
 
 
