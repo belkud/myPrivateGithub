@@ -15,7 +15,7 @@ body {
     /* cursor:  url('public/dino_test.jpeg'), auto; */
     background: linear-gradient(white, blue, red) fixed;
 
-    background: lightgrey;
+    background: lightgrey !important;
     margin-left: 50px;
     cursor: pointer;
 }
@@ -447,6 +447,12 @@ justify-content: center
 
 #bottom_aside div div:nth-last-child(1){
     background-color: pink;
+    order: -2;
+}
+
+#bottom_aside div div:nth-last-child(2){
+    background-color: black;
+    order: -3;
 }
 
 

@@ -18,6 +18,57 @@
 </head>
 
 <body>
+    <div id="container_div">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: red;">1</div>
+        <div style="background-color: orange;">2</div>
+        <div style="background-color: orange;">2</div>
+        <div style="background-color: yellow;">3</div>
+        <div style="background-color: blue; flex-shrink: 0;">4</div>
+
+    </div>
+
+<style>
+    #container_div {
+        display: flex;
+        margin-top: 300px;
+        margin-bottom: 300px;
+        border: 1px solid #000;
+        gap: 10px;
+        height: 200px;
+    }
+    
+    #container_div  div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        color: aliceblue;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        text-shadow: 0px 0px 2px red;
+        font-size: 20px;
+    }
+    
+    #container_div div:nth-child(3){
+        
+        /* заполняет элементом всё избыточное пространство в контейнере */
+        /* flex-grow: 1; */
+        
+        /* сжимает элемент в контейнере */
+        /* flex-shrink: 0; */
+        
+        /* ширина DIVа в процентах или пикселях от контейнера */
+        /* flex-basis: 50%;  */
+        
+        /* все три свойства в одной строке */
+        /* flex: 1 1 200px; */
+        width: 100%;
+    }
+    
+    
+
+</style>
 
 
 <div id="border_content">
@@ -93,6 +144,66 @@
 
 </div>
 
+
+
+
+<div id="cont">
+    <div id="modal">modal</div>
+    <div id="window">РЕКЛАМА</div>
+    <div id="cross"> &#10006;</div>
+
+</div>
+
+<style>
+    #cont {
+        z-index: 50;
+    }
+
+    #modal {
+        background-color: #0000007f;
+        position:fixed;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #window {
+        background-color: lightslategray;
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+        position: fixed;
+        z-index: 3;
+        top: calc(50% - 75px);
+        left: calc(50% - 150px);        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #cross {
+        background-color: red;
+        color: aliceblue;
+        position: fixed;
+        z-index: 5;
+        padding: 0px 5px;
+        top: calc(50.5% - 75px);
+        left: calc(50% + 120px);        
+
+    }
+
+    #cont:hover>#cross, 
+    #cont:hover>#window, 
+    #cont:hover>#modal
+    {
+        filter:opacity(0);
+    }
+
+
+
+
+</style>
 
 
 
