@@ -33,7 +33,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
 
-        <div style="margin-top: -40%;">
+        <div style="margin-top: ;">
             <img src="avatars/350x100.png" alt="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
@@ -57,8 +57,9 @@
     margin-bottom: 200px;
     padding: 20px;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 30% 30% calc(40% - 40px);
+    /* grid-template-columns: 33% 33% 34%; */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /* width: 65%; */
 }
@@ -66,6 +67,7 @@
 
 #tables_box img {
     width: 100%;
+    max-height: 100px;
 }
 
 #tables_box div {
@@ -77,7 +79,11 @@
     height:fit-content;
 }
 
+#tables_box div:nth-child(even) {
+    background-color: cadetblue;
+    grid-row: 2 / span 2;
 
+}
 
 
         /* заполняет элементом всё избыточное пространство в контейнере */
@@ -131,7 +137,7 @@
         margin-left: 80px;
     }
     .it-2{
-        grid-column: 2/3;
+        grid-column: 2/span 1;
         background-color: pink;
         padding: 10px;
         border-radius: 10px 10px 10px 0px;
