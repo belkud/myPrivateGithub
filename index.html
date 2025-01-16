@@ -23,28 +23,30 @@
     <div id="tables_box">
         <div>
             <img src="avatars/350x100.png" alt="">
+            1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
         <div>
             <img src="avatars/350x230.png" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
+            2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
         <div>
             <img src="avatars/350x150.png" alt="">
+            3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
 
         <div style="margin-top: ;">
             <img src="avatars/350x100.png" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
+            4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
         <div>
             <img src="avatars/350x230.png" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
+            5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
         <div>
             <img src="avatars/350x150.png" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
+            6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium 
         </div>
         
     </div>
@@ -62,25 +64,63 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: [col-1] 30% 30% calc(40% - 40px);
     gap: 20px;
+    /* grid-template-rows: repeat(5, 1fr); */
     /* width: 65%; */
     align-content: space-evenly;
     align-items:safe;
     align-self: center;
+    /* grid-gap: 3em; */
 }
 
 
 #tables_box img {
-    width: 100%;
+    width:  calc(100% + 20px);
     max-height: 100px;
+    margin-left: -10px;
+    margin-top: -10px;
 }
 
 #tables_box div {
+    border:  solid #000;
     display: grid;
     flex-direction: column;
     gap: 10px;
     border: 1px solid red;
     flex-grow:100px;
+    padding: 10px;
     height:fit-content;
+}
+
+#tables_box div:nth-child(3) {
+    /* background-color: pink; */
+    /* grid-row: 1/2; */
+    /* grid-column: 2/3; */
+    /* height: 250px; */
+    /* overflow-y: scroll; */
+}
+
+#tables_box div:nth-child(1) {
+    background-color: pink;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#tables_box div:nth-child(2) {
+    background-color: greenyellow;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#tables_box div:nth-child(3) {
+    background-color: orange;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+#tables_box div:nth-child(4) {
+    background-color: aquamarine;
+    grid-row: 3/4;
+    grid-column: 3/4;
 }
 
 
@@ -107,7 +147,10 @@
 </style>
 
 
+<div>
+<img src="" alt="">
 
+</div>
 
 
     <div id="dialog">
