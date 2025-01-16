@@ -456,6 +456,43 @@ justify-content: center
 }
 
 
+@media screen and (max-width:800px) {
+    #grid_menu {
+        grid-template-columns: 3fr 1fr 1fr !important;
+    }
+
+    #grid_menu div:nth-child(4n-3) {
+        display: none;
+    
+    }
+    #hide_div {
+        display: none !important;
+    }
+    #email_message  {
+        margin-top: 20px;
+    }
+
+    #email_message div {
+        display: flex;
+        align-items: center;
+        color: transparent;
+        margin-left: 30%;
+        margin-right: 20px;
+        padding-left: 14px;
+        padding-right: 10px;
+
+        width: 40px !important;
+    }
+    
+    #show_div {
+        display: block !important;
+    }
+}
+
+
+
+
+
 
 @media screen and (max-width:600px) {
     #grid {
