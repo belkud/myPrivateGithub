@@ -19,6 +19,7 @@
 
 <body>
 
+
     <div id="tables_box">
         <div>
             <img src="avatars/350x100.png" alt="">
@@ -57,11 +58,14 @@
     margin-bottom: 200px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 30% 30% calc(40% - 40px);
     /* grid-template-columns: 33% 33% 34%; */
     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: [col-1] 30% 30% calc(40% - 40px);
     gap: 20px;
     /* width: 65%; */
+    align-content: space-evenly;
+    align-items:safe;
+    align-self: center;
 }
 
 
@@ -79,11 +83,12 @@
     height:fit-content;
 }
 
-#tables_box div:nth-child(even) {
+
+/* #tables_box div:nth-child(even) {
     background-color: cadetblue;
     grid-row: 2 / span 2;
 
-}
+} */
 
 
         /* заполняет элементом всё избыточное пространство в контейнере */
@@ -97,9 +102,9 @@
         
         /* все три свойства в одной строке */
         /* flex: 1 1 200px; */
-
+        
+        
 </style>
-
 
 
 
@@ -1161,6 +1166,15 @@ margin-left: calc(10% - 20px);
             top: 0px;
             left: 0px;
             z-index: 1;
+
+
+            /*! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+            display: none;
+
+            /*! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
         }
 
         #container_menu:hover {
