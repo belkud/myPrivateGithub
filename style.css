@@ -18,6 +18,8 @@ body {
     background: lightgrey !important;
     margin-left: 50px;
     cursor: pointer;
+    padding-top: 300px;
+    
 }
 
 * {
