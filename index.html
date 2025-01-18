@@ -20,14 +20,29 @@
 <body>
 <div style="border-top: 1px solid red; margin-bottom: 30px;"></div>
 
-<div id="move_square" style="
-animation: move_square 2.5s linear alternate infinite;
+
+<form action="">
+    <input type="text">
+    <input type="text">
+    <input type="submit" value="Send">
+</form>
+
+
+
+
+
+
+
+<!--! анимация мячика -->
+
+<!-- <div id="move_square" style="
+animation: move_square 12.5s linear alternate infinite;
 width: 50px; 
 height: 50px;
 border-radius: 50%;
 position: absolute;
 background: greenyellow;">
-</div>
+</div> -->
 
 
 <style>
@@ -69,7 +84,6 @@ background: greenyellow;">
             border-radius: 50%;
         }
         
-        
         100% {
             transform: scale(2.5);
             margin-left: 500px;
@@ -78,10 +92,11 @@ background: greenyellow;">
             background-size: cover;
             background-position: center;
         }
-
     }
-
-</style>
+        
+    </style>
+    
+<!--! анимация мячика, завершение -->
 
 
 
@@ -95,20 +110,6 @@ background: greenyellow;">
 
 
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -149,6 +150,11 @@ background: greenyellow;">
 
     <input type="submit" value="Отправить">
 </form>
+
+<script>
+    form_test.style.backgroundColor = 'yellow'
+</script>
+
 <style>
     #uname {
         /* background-color: aqua; */
@@ -156,7 +162,7 @@ background: greenyellow;">
     }
 
     #form_test {
-        background: powderblue;
+        /* background: powderblue; */
         display: flex;
         flex-direction: column;
         gap: 10px;
