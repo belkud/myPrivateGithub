@@ -20,8 +20,72 @@
 <body>
 <div style="border-top: 1px solid red; margin-bottom: 30px;"></div>
 
+<div id="move_square" style="
+animation: move_square 2.5s linear alternate infinite;
+width: 50px; 
+height: 50px;
+border-radius: 50%;
+position: absolute;
+background: greenyellow;">
+</div>
 
-<form id="your_opinion" action="">
+
+<style>
+    @keyframes move_square {
+        0% {
+            background: greenyellow;
+
+        }
+        25% {
+            margin-top: 100px;
+            background: greenyellow;
+        }
+        
+        26% {
+            background: red;
+        }
+
+        50% {
+            margin-top: 0px;
+            background:red;
+        }
+        
+        51% {
+            background: greenyellow;
+        }
+        
+        75% {
+            margin-top: 100px;
+            background: greenyellow;
+        }
+        
+        76% {
+            background: red;
+        }
+        
+        95% {
+            background: red;
+            transform: scale(1);
+            border-radius: 50%;
+        }
+        
+        
+        100% {
+            transform: scale(2.5);
+            margin-left: 500px;
+            border-radius: 0%;
+            background-image: url(public/png-clipart-watermark-explosion-explosion-explosion-illustration-texture-orange.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+</style>
+
+
+
+<form style="margin-top: 300px;" id="your_opinion" action="">
     <h3>We need your opinion!</h3>
     <div>
         <label for="Nick">Nick</label>
