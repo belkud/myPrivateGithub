@@ -21,13 +21,133 @@
 <div style="border-top: 1px solid red; margin-bottom: 30px;"></div>
 
 
-<h3>Давайте что-нибудь найдём</h3>
-<form action="">
-    <input type="text" name="" id="" placeholder="введите телефон"> 
-    <input type="submit" value="Поиск">
+<form id="your_opinion" action="">
+    <h3>We need your opinion!</h3>
+    <div>
+        <label for="Nick">Nick</label>
+        <input type="text" id="Nick" name="NickName">
+        <!-- name обязательно нужно для передачи данных на сервер -->
+    </div>
+
+
 </form>
 
-<button style="display: flex; align-items: center" value="кнопка"><img style="width: 18px;" src="public/calc.png" alt=""> Нажми меня</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Давайте что-нибудь найдём</h3>
+<form action="https://www.ozon.ru/?__rr=2&abt_att=1&origin_referer=yandex.ru" method="post">
+<!-- get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
+<!-- post - не отображаются в поисковой строке -->
+    <input type="submit" value="Поиск">
+    <input type="text" name="" id="" placeholder="введите телефон">  <br>
+    <input type="reset" value="Очистить">
+</form>
+
+
+<form id="form_test" action="" method="">
+<h3>We need your opinion</h3>
+    <div>
+        <label for="uname">Name:</label>
+        <input type="text" id="uname" name="UserName">
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="userEmail" />
+    </div>
+
+    <div>
+        <label for="textArea">Message:</label>
+        <textarea name="" id="textArea"></textarea>
+    </div>
+
+    <input type="submit" value="Отправить">
+</form>
+<style>
+    #uname {
+        /* background-color: aqua; */
+        /* color: goldenrod; */
+    }
+
+    #form_test {
+        background: powderblue;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 260px; 
+        cursor: pointer;
+    }
+    
+    #form_test input {
+        border-color: transparent;
+    }
+
+    #form_test input:hover {
+        border-color: orange;
+    }
+    
+    #form_test input:last-child:hover {
+        color: red;
+        background-color: pink;
+        transition: 1s;
+
+    }
+    
+    #form_test textarea:hover {
+        border-color: orange;
+    }
+
+
+
+</style>
+
+
+
+
+<!-- <button style="display: flex; align-items: center" value="кнопка"><img id="calc" style="width: 18px;" src="public/calc.png" alt=""> Нажми меня</button>
+
+<style>
+
+#calc {
+    animation: calcAnim 10s linear infinite;  
+}
+
+@keyframes calcAnim {
+    from {
+
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+</style> -->
 
 
 
