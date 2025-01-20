@@ -100,17 +100,37 @@ background: greenyellow;">
 
 
 
-<form style="margin-top: 300px;" id="your_opinion" action="">
-    <h3>We need your opinion!</h3>
+<form id="field" action="name">
+    <input type="text" id="innerField" value="">
+
     <div>
-        <label for="Nick">Nick</label>
-        <input type="text" id="Nick" name="NickName">
-        <!-- name обязательно нужно для передачи данных на сервер -->
+        <input type="radio" name="gender">
+        <label for="male">Мужчина</label>
     </div>
 
+    <div>
+        <input type="radio" name="gender">
+        <label for="woman">Женщина</label>
+    </div>
 
+    <div>
+        <input type="checkbox" name="agree" id="agree" checked disabled>
+        <label for="agree">Согласие</label>
+    </div>
+    <input type="text" placeholder="city" value="City" disabled>
+    
 </form>
+<script>
+    // let innerField = document.querySelector('#innerField')
+    
+    // if (innerField.value='') {
+    //     field.style.backgroundColor = 'aqua'
+    // } else {
+    //     field.style.backgroundColor = 'orange'
+    // }
+    
 
+</script>
 
 
 
@@ -122,20 +142,21 @@ background: greenyellow;">
 
 
 <h3>Давайте что-нибудь найдём</h3>
-<form action="https://www.ozon.ru/?__rr=2&abt_att=1&origin_referer=yandex.ru" method="post">
-<!-- get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
-<!-- post - не отображаются в поисковой строке -->
-    <input type="submit" value="Поиск">
-    <input type="text" name="" id="" placeholder="введите телефон">  <br>
-    <input type="reset" value="Очистить">
-</form>
+<!-- <form action="https://www.ozon.ru/?__rr=2&abt_att=1&origin_referer=yandex.ru" method="post"> -->
+    <!-- get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
+    <!-- post - не отображаются в поисковой строке -->
+    <!-- <input type="submit" value="Поиск"> -->
+    <!-- <input type="text" name="" id="" placeholder="введите телефон">  <br> -->
+    <!-- <input type="reset" value="Очистить"> -->
+<!-- </form> -->
 
 
 <form id="form_test" action="" method="">
-<h3>We need your opinion</h3>
+    <h3>We need your opinion</h3>
     <div>
         <label for="uname">Name:</label>
         <input type="text" id="uname" name="UserName">
+        <!-- name обязательно нужно для передачи данных на сервер -->
     </div>
 
     <div>
@@ -151,8 +172,30 @@ background: greenyellow;">
     <input type="submit" value="Отправить">
 </form>
 
+
+<div id="newText">
+
+</div>
+
+
+
 <script>
     form_test.style.backgroundColor = 'yellow'
+    let formT = document.querySelector('#form_test')
+    let newText = document.querySelector('#newText')
+    let textArea = document.querySelector('#textArea')
+    
+    let score = 0 
+    formT.addEventListener('click',()=> {
+        // newText.style.background='blue';
+        score+=1
+        newText.innerHTML = score
+        // console.log(newText.innerHTML)
+    })
+
+
+
+
 </script>
 
 <style>
@@ -162,7 +205,7 @@ background: greenyellow;">
     }
 
     #form_test {
-        /* background: powderblue; */
+        background: powderblue;
         display: flex;
         flex-direction: column;
         gap: 10px;
