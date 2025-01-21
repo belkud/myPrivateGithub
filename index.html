@@ -23,8 +23,10 @@
 
 <!-- get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
 <!-- post - не отображаются в поисковой строке -->
-<!-- name обязательно нужно для передачи данных на сервер -->
-<!-- value - значение, которое пишет пользователь -->
+<!-- name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
+<!-- value - делает надпись в самом input (?) -->
+<!-- disabled - отключает редактирование -->
+<!-- checked - ставим отметку -->
 
 <!-- всё и все кнопки оборачиваем в divы -->
 
@@ -32,21 +34,18 @@
 <form action="" method="get" id="change_form">
     <div>
         <label for="name">Имя</label>
-        <input type="text" value="Petya" id="name"         style="margin-left: 33px;">
+        <input type="text" id="name" name="name"     style="margin-left: 33px;">
     </div>
     <div>
         <label for="surname">Фамилия</label>
-        <input type="text" id="surname">
+        <input type="text" id="surname" name="surname">
     </div>
     <div>
         <input type="submit">
     </div>
-
-    <div>
-        <input type="checkbox" name="123" id="123">
-        <label for="123">user</label>
-    </div>
 </form>
+
+
 
 <style>
     #change_form {
