@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0
-    shrink-to-fit:no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:1024px)" href="style1024.css">
@@ -21,13 +20,79 @@
 <div style="border-top: 1px solid red; margin-bottom: 30px;"></div>
 
 
-<form action="">
-    <input type="text">
-    <input type="text">
+<form style="margin-bottom: 200px;" action="" method="get" name="send_title">
+    <div>
+        <label  for="title">Имя</label>
+        <input id="check_title" type="text" value="8"  name="name2" id="title"  placeholder="Введите имя">
+    </div>
+    <div>
+        <label for="title2">Фамилия</label>
+        <input type="text" name="s" id="title2"  placeholder="Введите фамилию">
+    </div>
     <input type="submit" value="Send">
 </form>
 
 
+<script>
+
+console.log(check_title.innerHTML);
+console.log(check_title.innerText);
+console.log(check_title.value);
+
+
+
+
+
+let text2  = []
+
+let hello = 'hello'
+
+let seprLetter = hello.split('')
+
+text2.push(seprLetter.length)
+
+console.log(text2);
+
+
+
+
+</script>
+
+
+
+
+
+
+<form id="field" action="name">
+    <input type="text" id="innerField" value="mlk" disabled,>
+    <div>
+        <input type="radio" value="name" id="male" name="gender" >
+        <label for="male">Мужчина</label>
+    </div>
+
+    <div>
+        <input type="radio"  value="name" name="gender" id="woman">
+        <label for="woman">Женщина</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="agree" id="agree" checked disabled>
+        <label for="agree">Согласие</label>
+    </div>
+    <input type="text" placeholder="city" value="City" disabled>
+    
+</form>
+<script>
+    let innerField = document.querySelector('#innerField')
+    
+    // if (innerField.value = Number(12)) {
+    //     field.style.backgroundColor = 'aqua'
+    // } else {
+    //     field.style.backgroundColor = 'orange'
+    // }
+    
+
+</script>
 
 
 
@@ -36,17 +101,16 @@
 <!--! анимация мячика -->
 
 <!-- <div id="move_square" style="
-animation: move_square 12.5s linear alternate infinite;
+animation: move_square 10s linear alternate infinite;
 width: 50px; 
 height: 50px;
 border-radius: 50%;
 position: absolute;
 background: greenyellow;">
 </div> -->
-
-
 <style>
-    @keyframes move_square {
+
+@keyframes move_square {
         0% {
             background: greenyellow;
 
@@ -82,7 +146,7 @@ background: greenyellow;">
             background: red;
             transform: scale(1);
             border-radius: 50%;
-        }
+        }    
         
         100% {
             transform: scale(2.5);
@@ -91,47 +155,12 @@ background: greenyellow;">
             background-image: url(public/png-clipart-watermark-explosion-explosion-explosion-illustration-texture-orange.png);
             background-size: cover;
             background-position: center;
-        }
-    }
+        }    
+    }    
         
     </style>
     
-<!--! анимация мячика, завершение -->
-
-
-
-<form id="field" action="name">
-    <input type="text" id="innerField" value="">
-
-    <div>
-        <input type="radio" name="gender">
-        <label for="male">Мужчина</label>
-    </div>
-
-    <div>
-        <input type="radio" name="gender">
-        <label for="woman">Женщина</label>
-    </div>
-
-    <div>
-        <input type="checkbox" name="agree" id="agree" checked disabled>
-        <label for="agree">Согласие</label>
-    </div>
-    <input type="text" placeholder="city" value="City" disabled>
-    
-</form>
-<script>
-    // let innerField = document.querySelector('#innerField')
-    
-    // if (innerField.value='') {
-    //     field.style.backgroundColor = 'aqua'
-    // } else {
-    //     field.style.backgroundColor = 'orange'
-    // }
-    
-
-</script>
-
+<!--! анимация мячика, завершение -->    
 
 
 
@@ -151,7 +180,7 @@ background: greenyellow;">
 <!-- </form> -->
 
 
-<form id="form_test" action="" method="">
+<form id="form_test" action="" method="get">
     <h3>We need your opinion</h3>
     <div>
         <label for="uname">Name:</label>
@@ -199,10 +228,10 @@ background: greenyellow;">
 </script>
 
 <style>
-    #uname {
+    /* #uname { */
         /* background-color: aqua; */
         /* color: goldenrod; */
-    }
+    /* } */
 
     #form_test {
         background: powderblue;
@@ -513,7 +542,7 @@ background: greenyellow;">
             aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium
         </div>
 
-        <div style="margin-top: ;">
+        <div>
             <img src="avatars/350x100.png" alt="">
             4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sed ducimus laudantium commodi
             aspernatur delectus repellat? Nesciunt vel, quas sunt atque accusantium
@@ -570,13 +599,13 @@ background: greenyellow;">
             height: fit-content;
         }
 
-        #tables_box div:nth-child(3) {
+        /* #tables_box div:nth-child(3) { */
             /* background-color: pink; */
             /* grid-row: 1/2; */
             /* grid-column: 2/3; */
             /* height: 250px; */
             /* overflow-y: scroll; */
-        }
+        /* } */
 
         #tables_box div:nth-child(1) {
             background-color: pink;
@@ -1047,7 +1076,6 @@ grid-template-rows: 50px 100px 50%;">
             transition: 1s !important;
         }
 
-        .row-3 {}
 
         [class*="row-"] {
             /* Создание стилей всем классам с началом row- */
@@ -2597,7 +2625,7 @@ background-color: rgb(240, 248, 255, .2);">
 
 
 
-    <script src="js/main.js">
+    <script>
 
         let test = document.querySelector('#test_div')
         test.addEventListener('click', () => {
