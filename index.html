@@ -21,27 +21,80 @@
 
 
 
-<!-- get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
-<!-- post - не отображаются в поисковой строке -->
-<!-- name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
-<!-- value - делает надпись в самом input (?) -->
-<!-- disabled - отключает редактирование -->
-<!-- checked - ставим отметку -->
+<!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
+<!--! post - не отображаются в поисковой строке -->
 
-<!-- всё и все кнопки оборачиваем в divы -->
+<!--! name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
+<!--! value - делает надпись в самом input (но не на всех input) -->
+<!--! placeholder - подсказка для пользователя -->
 
 
-<form action="" method="get" id="change_form">
+<!--! disabled - отключает редактирование -->
+<!--! checked - ставим отметку -->
+
+<!--! всё и все кнопки оборачиваем в divы -->
+
+
+
+
+
+
+<form action="form_result.html" method="get" id="change_form">
     <div>
         <label for="name">Имя</label>
-        <input type="text" id="name" name="name"     style="margin-left: 33px;">
+        <input type="text" id="name" name="name" value=""  style="margin-left: 33px;">
     </div>
     <div>
         <label for="surname">Фамилия</label>
-        <input type="text" id="surname" name="surname">
+        <input type="text" id="surname" name="surname" value="">
+    </div>
+    
+    <div>
+        <input type="radio" id="man" name="gender" value="Man">
+        <label for="man">М</label> <br>
+    </div>
+       
+    <div>
+        <input type="radio" id="woman" name="gender" value="Woman">
+        <label for="woman">Ж</label> <br>
+    </div>
+    <h3>Выбор подписки</h3>
+    <div style="display: flex; flex-direction: column;">
+        <div>
+            <input type="radio" id="subs_third" name="subscribe" value="subs1">
+            <label for="subs_third">100$</label>
+        </div>
+        <div>
+            <input type="radio" id="subs_second" name="subscribe" value="subs2">
+            <label for="subs_second">200$</label>
+        </div>
+        <div>
+            <input id="subs_first" type="radio" name="subscribe" value="subs3" 
+            checked>
+            <label for="subs_first">300$</label>
+        </div>
+        
+
+    </div>    
+    <div>
+        <!-- <input type="checkbox" id="agreed"  name="Отправка соглашения" value="123" checked> -->
+        <!-- <label for="agreed">С условиями ознакомлен</label> -->
     </div>
     <div>
-        <input type="submit">
+        <input type="submit" value="Send" name="btn">
+    </div>
+    <div>
+        <input type="password" name="my_password" placeholder="Введите пароль">
+        <!-- Сайт для шифровки паролей https://md5-online.ru/ -->
+    </div>
+
+    <div>
+        <label for="country">Страна</label>
+        <select name="countrys" id="country">
+        <!-- в конце селекта может применяться 'multiple' -->
+            <option value="Russia">Россия</option>
+            <option value="China">Китай</option>
+        </select>
     </div>
 </form>
 
@@ -54,7 +107,6 @@
         gap: 5px;
         margin-bottom: 300px;
     }
-
 </style>
 
 
@@ -86,7 +138,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="userEmail" />
     </div>
-
+    
     <div>
         <label for="textArea">Message:</label>
         <textarea name="" id="textArea"></textarea>
