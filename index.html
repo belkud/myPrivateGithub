@@ -34,9 +34,15 @@
 
 <!--! всё и все кнопки оборачиваем в divы -->
 
-
-
-
+<form action="form_result.html">
+    <label for="">Список</label>
+    <input type="text" name="genre" id="userGenre" list="genreSuggestion">
+    <datalist id="genreSuggestion">
+        <option value="comedy">Комедия</option>
+        <option value="drama">Драма</option>
+    </datalist>
+    <input type="submit">
+</form>
 
 
 <form action="form_result.html" method="get" id="change_form">
