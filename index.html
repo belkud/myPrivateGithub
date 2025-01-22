@@ -17,6 +17,60 @@
 </head>
 
 <body>
+
+
+<div id="grid_container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+</div>
+
+
+<style>
+    #grid_container {
+        display:  grid;
+        /* grid-template-columns: 100px 200px 1fr 1fr; */
+        /* grid-template-rows: 20px 30px 80px; */
+        grid-template-columns: repeat(2,  1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        /* grid-gap: 10px; */
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+
+
+    }
+    
+    #grid_container div{
+        border: 1px solid #000;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: aliceblue;
+    }
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
 <div style="border-top: 1px solid red; margin-bottom: 30px;"></div>
 
 
@@ -31,8 +85,32 @@
 
 <!--! disabled - отключает редактирование -->
 <!--! checked - ставим отметку -->
+<!--! required - обязательно для заполнения -->
 
 <!--! всё и все кнопки оборачиваем в divы -->
+
+
+<!-- <div id="check_flex" style="display: flex; flex-direction: row;">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div> -->
+
+<style>
+    #check_flex {
+        background-color: antiquewhite;
+    }
+
+    #check_flex:nth-child(1) {
+        width: 200px;
+        border: 1px solid #000;
+    }
+
+</style>
+
+
+<textarea name="" id="" placeholder="Напишите текст"></textarea>
+
 
 <form action="form_result.html">
     <label for="">Список</label>
@@ -42,6 +120,7 @@
         <option value="drama">Драма</option>
     </datalist>
     <input type="submit">
+    <!-- <input type="number" min="5" max="10"> -->
 </form>
 
 
