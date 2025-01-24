@@ -1,4 +1,4 @@
-@import url(max600.css) screen and (max-width:600px);
+/* @import url(max600.css) screen and (max-width:600px); */
 
 
 body {
@@ -13,9 +13,9 @@ body {
     /* прокрутка фона */
     background-size: cover;
     /* cursor:  url('public/dino_test.jpeg'), auto; */
-    background: linear-gradient(white, blue, red) fixed;
+    /* background: linear-gradient(white, blue, red) fixed; */
 
-    background: lightgrey !important;
+    /* background: lightgrey !important; */
     margin-left: 50px;
     cursor: pointer;
     /* padding-top: 300px; */

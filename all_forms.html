@@ -33,10 +33,10 @@
     <div id="square"></div>
 
     <div id="cont-grid">
-        <div id="child1">1</div>
-        <div id="child2">2</div>
-        <div id="child3">3</div>
-        <div id="child4">4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
     </div>
 
 <style>
@@ -56,7 +56,17 @@
         flex-direction: column;
         align-items: center;
         padding: 5px 10px;
+        border-radius: 5px;
         background-color: orange;
+        /* border-color: aliceblue; */
+    }
+    
+    #cont-grid div:hover{
+        border-color: aqua;  
+    }
+    
+    #cont-grid div:active{
+        border-color: white;  
     }
     
     #cont-grid div:nth-child(1){
@@ -81,6 +91,7 @@
         width: 50px;
         background-color: #000;
         position: absolute;
+        transition: .2s ;
     }
 
 </style>
@@ -90,40 +101,8 @@
 
 <script>
 
-      let cont_grid = document.querySelector('#cont-grid')
-      let square = document.querySelector('#square')
-
-      let child1 = document.querySelector('#child1')
-      let child2 = document.querySelector('#child2')
-      let child3 = document.querySelector('#child3')
-      let child4 = document.querySelector('#child4')
- 
-    let scr = 0
-    let scr2 = 0
-    
-    child1.addEventListener('click', ()=> {
-        scr-=10
-        square.style.marginLeft = scr + 'px'
-        square.style.transition = .3 + 's'
-    })
-
-    child3.addEventListener('click', ()=> {
-        scr+=10
-        square.style.marginLeft = scr + 'px'
-    })
-
-    child2.addEventListener('click', ()=> {
-        scr2-=10
-        square.style.marginTop = scr2 + 'px'
-    })
 
 
-    child4.addEventListener('click', ()=> {
-        scr2+=10
-        square.style.marginTop = scr2 + 'px'
-    })
-
-  
 </script>
 
 
@@ -242,9 +221,10 @@
       <input type="search" id="search">
     </div>
 
-  </form>
+</form>
 
 
 </body>
+<script type="module" src="/script_js.js"></script>
 
 </html>
