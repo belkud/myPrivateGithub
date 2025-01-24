@@ -19,7 +19,8 @@
 <body>
 
 
-<div id="grid_container">
+
+<!-- <div id="grid_container">
     <div>1</div>
     <div>2</div>
     <div>3</div>
@@ -32,7 +33,7 @@
     <div>10</div>
 </div>
 
-
+ -->
 <style>
     #grid_container {
         display:  grid;
@@ -112,11 +113,39 @@
 
 
 
+<form id="green_form" action="" method="" style="background: green; width: 200px; 
+margin-bottom: 300px;
+padding: 10px;
+display: grid;
+gap: 10px;
+border-radius: 20px 5px;
+">
+    <div>
+        <input type="radio" value="male" id="gender1" name="sex" />
+        <label for="gender1">Male</label>
+    </div>
+    <div>
+        <input type="radio" value="female" id="gender2" name="sex" />
+        <label for="gender2">Female</label>
+    </div>
+    <div style="margin-left: auto;">
+        <input type="submit" value="Send" onclick="green_form.style.backgroundColor = 'orange'";>
+    </div>
+</form>
+
+<!-- <button id="bt" onclick="bt.style.backgroundColor='green'">123</button> -->
+
+
+
 <!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
 <!--! post - не отображаются в поисковой строке -->
 
 <!--! name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
 <!--! value - делает надпись в самом input (но не на всех input) -->
+<!-- Это нужно, чтобы в серверной части вашего приложения можно было 
+ определить какая конкретно кнопка была выбрана. -->
+
+
 <!--! placeholder - подсказка для пользователя -->
 
 
@@ -1234,18 +1263,26 @@ grid-template-rows: 50px 100px 50%;">
 
 
 
+    <!-- модальное окно -->
 
     <!-- <div id="cont">
-    <div id="modal">modal</div>
-    <div id="window">РЕКЛАМА</div>
-    <div id="cross"> &#10006;</div>
-</div> -->
+        <div id="modal">modal</div>
+        <div id="wind">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum omnis voluptatum rem obcaecati quibusdam nobis facere, perferendis architecto voluptatem, voluptates unde quisquam recusandae numquam? Repellat debitis quos earum recusandae.
+            <div id="cross" onclick="wind.style='color:white;'; modal.style='background:red; color:blue; transition:3s'" > &#10006;</div>
+        </div>
+    </div> -->
 
 
     <style>
         #cont {
             z-index: 50;
         }
+
+        /* #cont {
+            color: antiquewhite !important;
+            background-color: blue;
+        } */
 
         #modal {
             background-color: #0000007f;
@@ -1255,7 +1292,7 @@ grid-template-rows: 50px 100px 50%;">
             height: 100%;
         }
 
-        #window {
+        #wind {
             background-color: lightslategray;
             width: 300px;
             height: 150px;
@@ -1265,6 +1302,8 @@ grid-template-rows: 50px 100px 50%;">
             top: calc(50% - 75px);
             left: calc(50% - 150px);
             display: flex;
+            padding-left: 20px;
+            padding-top: 20px;
             align-items: center;
             justify-content: center;
 
@@ -1273,22 +1312,39 @@ grid-template-rows: 50px 100px 50%;">
         #cross {
             background-color: red;
             color: aliceblue;
-            position: fixed;
+            position: absolute;
             z-index: 5;
             padding: 0px 5px;
             top: calc(50.5% - 75px);
-            left: calc(50% + 120px);
+            /* left: calc(50% + 120px); */
+            margin-left: 250px;
 
         }
 
-        #cont:hover>#cross,
-        #cont:hover>#window,
-        #cont:hover>#modal {
-            filter: opacity(0);
-        }
+ 
     </style>
 
+<script>
+    let crossed = document.querySelector('#cross')
+    let wind = document.querySelector('#wind')
+    
+    // crossed.addEventListener('click', ()=> {
+    //     // cont.style.display = 'none'
+    //     modal.style.display = 'none'
+    //     wind.innerHTML = 'текст поменялся'
+        
+    //     setTimeout(() => {
+    //         wind.style.opacity = '0' 
+    //         wind.style.transition = '3000ms' 
+    //     }, 3000);
+    // })
+    
+    cross.addEventListener('cl')
+    // modal.style.backgroundColor ='blue'
 
+
+
+</script>
 
 
 
