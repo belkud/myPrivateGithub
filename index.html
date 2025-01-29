@@ -19,6 +19,272 @@
 <body>
 
 
+<!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
+<!--! post - не отображаются в поисковой строке -->
+
+<!--! name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
+<!-- Это нужно, чтобы в серверной части вашего приложения можно было 
+ определить какой конкретно input был выбран. -->
+
+ <!--! value делает надпись в самом input (но не на всех input) -->
+ <!--! value делает надпись на кнопке. -->
+
+<!--! placeholder - подсказка для пользователя -->
+
+
+<!--! disabled - отключает редактирование -->
+<!--! checked - ставим отметку -->
+<!--! required - обязательно для заполнения -->
+
+<!--! всё и все кнопки оборачиваем в divы -->
+
+
+<form id="library" method="get">
+    <h3>Inputs</h3>
+    <div id="library_inputs">
+        <input type="text" name="inp1" placeholder="Enter some text">
+        <input type="text" name="inp2" placeholder="valid text">
+        <input type="text" name="inp3" placeholder="invalid text">
+    </div>
+
+    <h3>Checkboxes</h3>
+    <div id="check_box" style="margin-bottom: 20px;">
+        <input type="checkbox" id="subs" name="button" value="val1">
+        <label for="subs" style="position: absolute;">Subscribe</label>
+        
+        <input style="margin-left: -16px;" type="checkbox" id="subs2" name="button" value="val2">
+        <label for="subs2" style="position: absolute; color: red;">Subscribe</label>
+    </div>
+
+
+    <!-- <select name="lang">
+        <option value="rus">Rus</option>
+        <option value="eng">Eng</option>
+    </select> -->
+
+    <!-- <datalist>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </datalist> -->
+
+    <div>
+        <input type="checkbox" name="check" value="val" id="write">
+        <label for="write">Договор</label>
+    </div>
+
+    <div>
+        <input type="radio" id="city1" value="Sochi" name="city">
+        <label for="city1">Sochi</label>
+    </div>
+    <div>
+        <input type="radio" id="city2" value="Moscow" name="city">
+        <label for="city2">Moscow</label>
+    </div>
+    <div>
+        <input type="radio" id="city3" value="St-Petersburg" name="city">
+        <label for="city3">St-Petersburg</label>
+    </div>
+
+    <div>
+        <input style="background: green;
+                padding: 5px 10px;
+                color: aliceblue;
+                border-radius: 5px;
+                margin: 10px;
+        " type="submit" value="Active" name="Act">
+        <input type="submit" value="Hover" name="HoveR">
+    </div>
+    
+    <div>
+        <input type="submit" id="">
+    </div>
+</form>
+
+<script>
+    let subs = document.querySelector ('#subs')
+    let subs2 = document.querySelector ('#subs2')
+    let check_box = document.querySelector ('#check_box')
+    check_box.addEventListener('click', ()=> {
+        if (subs2.style.display == 'block') {
+            subs2.style.display = 'none'
+            subs.style.display = 'block'
+        } else {
+            subs2.style.display = 'block'
+            subs.style.display = 'none'
+            
+        }
+    })
+    
+</script>
+
+<style>
+    
+    #subs::before {
+        content: '';
+        background-size: 20px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: chartreuse;
+        background-image: url(public/forms/valid.png);
+    }
+
+    #subs2::before {
+        content: '';
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 0px  -2px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: rgb(238, 151, 151);
+        background-image: url(public/forms/invalid.png);
+    }
+
+
+    #library {
+        /* background-color: rgb(136, 203, 136); */
+        /* border: 2px solid red; */
+        width: 1000px;
+        margin-top: 300px;
+        margin-bottom: 300px;
+        padding: 20px;
+    }
+    #library_inputs input {
+        padding: 10px;
+        transition: 1s;
+    }
+    
+    #library_inputs input:nth-child(2) {
+        border: 2px solid green;
+        background-image: url(public/forms/valid.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 155px 8px;
+        color: aliceblue;
+    }
+
+    #library_inputs input:nth-child(3) {
+        border: 2px solid red;
+        background-image: url(public/forms/invalid.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 155px 4px;
+    }
+
+
+    #library_inputs>input:hover {
+        background-color: rgb(136, 174, 176);
+        
+    }
+    input::placeholder {
+        color: green;
+    }
+    
+</style>
+
+
+<form action="" method="get">
+    <select name="color" id="">
+        <option value="red">red </option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+
+    <input type="submit" value="send_color">
+</form>
+
+
+
+
+
+<form id="card" method="get">
+    <div id="card_info">credit card details</div>
+    <div>
+        <label for="number">Card Number</label>
+        <input type="text" id="number" name="num" value="123" placeholder="123456789">
+    </div>
+    <div>
+        <label for="">Name on card</label>
+        <input type="text" placeholder="Name Surname">
+    </div>
+    <div id="card_inputs" style="display: flex; align-items: flex-end; width: 72%;">
+        <div>
+            <label for="">Expire date</label>
+            <input type="number"  placeholder="02">
+        </div>    
+        <div>
+            <label for=""></label>
+            <input type="text" placeholder="2017">
+        </div>    
+        <div>
+            <label for="password">CVV/CVN</label>
+            <input type="password" id="password" placeholder="***">
+        </div>    
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>
+
+<script>
+    let password = document.querySelector('#password')
+
+
+</script>
+
+<style>
+    #card {
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: rgb(172, 204, 215);
+        margin-bottom: 300px;
+        background-image: url(public/moon_flag.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: 245px 60px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #card_info {
+        /* color: aliceblue; */
+        text-transform: uppercase;
+        background-color: rgb(190, 38, 38);
+        padding: 5px 20px;
+        padding-right: 80px;
+        margin-left: -50px;
+        width: 200px;
+    }
+
+    #card input {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        background-color: rgb(195, 215, 222);
+        border-color: transparent;
+        border-bottom: 1px solid;
+    }
+
+    #card_inputs input{
+        width: 50%;
+    }
+
+    #card_inputs div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+</style>
 
 <!-- <div id="grid_container">
     <div>1</div>
@@ -135,25 +401,6 @@ border-radius: 20px 5px;
 
 <!-- <button id="bt" onclick="bt.style.backgroundColor='green'">123</button> -->
 
-
-
-<!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
-<!--! post - не отображаются в поисковой строке -->
-
-<!--! name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
-<!--! value - делает надпись в самом input (но не на всех input) -->
-<!-- Это нужно, чтобы в серверной части вашего приложения можно было 
- определить какая конкретно кнопка была выбрана. -->
-
-
-<!--! placeholder - подсказка для пользователя -->
-
-
-<!--! disabled - отключает редактирование -->
-<!--! checked - ставим отметку -->
-<!--! required - обязательно для заполнения -->
-
-<!--! всё и все кнопки оборачиваем в divы -->
 
 
 <!-- <div id="check_flex" style="display: flex; flex-direction: row;">
@@ -1339,7 +1586,7 @@ grid-template-rows: 50px 100px 50%;">
     //     }, 3000);
     // })
     
-    cross.addEventListener('cl')
+    // cross.addEventListener('cl')
     // modal.style.backgroundColor ='blue'
 
 
@@ -2882,7 +3129,7 @@ background-color: rgb(240, 248, 255, .2);">
         </div>
 
         <div style="margin-top: -6px;">
-            <img class="dog" src="public/dog.jpg " alt="">
+            <img class="dog" src="public/sprunki.webp " alt="">
             <div class="text">12345</div>
         </div>
 

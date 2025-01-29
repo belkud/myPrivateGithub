@@ -2,6 +2,11 @@
 
 
 
+
+
+
+
+
 let cont_grid = document.querySelector('#cont-grid')
 let square = document.querySelector('#square')
 
@@ -41,24 +46,29 @@ let square_opacity = 0
 
 cont_grid.addEventListener('click', ()=>{
     square_opacity+=10
+    square.style.opacity = (100 - square_opacity) + '%'
     
     if (square.style.opacity==0) {
         square_opacity=0
     }
 
+    
+    let colorS = square.style
+    if (colorS.background=='black') {
+        colorS.background='red'   
+    } else{
+        colorS.background='black'
+    }
 
-    // if (square_opacity==100) {
-    //     square_opacity=0
-    // }
-    
-    square.style.opacity = (100 - square_opacity) + '%'
+
     
     
-    // square.style.background='red'
     console.log(square.style.opacity);
     console.log(square_opacity);
 
-    
+    function name(params) {
+        
+    }
 
 })
 
