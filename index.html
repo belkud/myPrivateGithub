@@ -22,15 +22,14 @@
 <!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
 <!--! post - не отображаются в поисковой строке -->
 
-<!--! name обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
+<!--! name(имя) - обязательно нужно для передачи данных на сервер(отображается в строке поиска) -->
 <!-- Это нужно, чтобы в серверной части вашего приложения можно было 
  определить какой конкретно input был выбран. -->
 
- <!--! value делает надпись в самом input (но не на всех input) -->
+ <!--! value(значение) - делает надпись в самом input (но не на всех input) -->
  <!--! value делает надпись на кнопке. -->
 
 <!--! placeholder - подсказка для пользователя -->
-
 
 <!--! disabled - отключает редактирование -->
 <!--! checked - ставим отметку -->
@@ -38,12 +37,22 @@
 
 <!--! всё и все кнопки оборачиваем в divы -->
 
+<!--! action - путь на сервер -->
 
-<form id="library" method="get">
+<form action="" id="library" method="get">
     <h3>Inputs</h3>
+
+
+    <select name="color" id="">
+        <option value="red">red </option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+
+    
     <div id="library_inputs">
-        <input type="text" name="inp1" placeholder="Enter some text">
-        <input type="text" name="inp2" placeholder="valid text">
+        <input type="text" name="inp1" maxlength="3" placeholder="Enter some text">
+        <input type="text" name="inp2" value="123" placeholder="valid text">
         <input type="text" name="inp3" placeholder="invalid text">
     </div>
 
@@ -95,11 +104,22 @@
         " type="submit" value="Active" name="Act">
         <input type="submit" value="Hover" name="HoveR">
     </div>
-    
+    <div value="111" name="222">rrr</div>
+    <div>
+        <textarea name="user_text" id="tetxar"></textarea>
+    </div>
     <div>
         <input type="submit" id="">
     </div>
 </form>
+
+
+<style>
+
+    #tetxar:focus {
+        border:5px solid greenyellow;
+    }
+</style>
 
 <script>
     let subs = document.querySelector ('#subs')
@@ -163,7 +183,6 @@
         background-repeat: no-repeat;
         background-size: 20px;
         background-position: 155px 8px;
-        color: aliceblue;
     }
 
     #library_inputs input:nth-child(3) {
@@ -187,11 +206,7 @@
 
 
 <form action="" method="get">
-    <select name="color" id="">
-        <option value="red">red </option>
-        <option value="yellow">yellow</option>
-        <option value="green">green</option>
-    </select>
+
 
     <input type="submit" value="send_color">
 </form>
