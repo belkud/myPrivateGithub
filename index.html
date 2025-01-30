@@ -19,6 +19,59 @@
 <body>
 
 
+<div id="textttt" class="check_classlist2">12345678</div>
+
+<style>
+    .check_classlist2 {
+        width: 180px;
+        height: 180px;
+        background-color: aqua;
+    }
+
+    
+    .new_classlist {
+        background-color: orange;
+    }
+
+</style>
+
+<script>
+    // let check_classlist = document.querySelector('#textttt')
+    let check_classlist = document.querySelector('.check_classlist2')
+    let new_classlist = document.querySelector('.new_classlist')
+
+    let x = check_classlist.textContent.length
+    console.log(x);
+    if (x>3 && x<=8) {
+        check_classlist.style.backgroundColor = 'yellow '
+    } else {
+        check_classlist.style.backgroundColor = 'aqua '
+    }
+    
+    
+    check_classlist.addEventListener('click', ()=> {
+
+
+
+
+        // check_classlist.classList.toggle('new_classlist')
+        // console.log(check_classlist.classList.contains('new_classlist'));
+        
+
+        // console.log(check_classlist.classList[0]);
+        // console.log(check_classlist.classList[1]);
+        // console.log('________');
+        
+    })
+
+
+</script>
+
+
+
+
+
+
 <!--! get - метод отправки для поисковых систем (отображаются в поисковой строке) -->
 <!--! post - не отображаются в поисковой строке -->
 
@@ -49,7 +102,7 @@
         <option value="green">green</option>
     </select>
 
-    
+
     <div id="library_inputs">
         <input type="text" name="inp1" maxlength="3" placeholder="Enter some text">
         <input type="text" name="inp2" value="123" placeholder="valid text">
