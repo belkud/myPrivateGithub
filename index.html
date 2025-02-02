@@ -18,8 +18,25 @@
 
 <body>
 
+<div>
+    <input type="text" minlength="3" maxlength="6" id="library_test">
+</div>
 
-<div id="textttt" class="check_classlist2">12345678</div>
+
+<style>
+    #library_test {
+        border: 2px solid green;
+        background-image: url(public/forms/valid.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        width: 30%;
+        background-position-x: 100%;
+    }
+</style>
+    
+
+
+<div id="textttt" class="check_classlist2">1456798</div>
 
 <style>
     .check_classlist2 {
@@ -36,13 +53,13 @@
 </style>
 
 <script>
-    // let check_classlist = document.querySelector('#textttt')
-    let check_classlist = document.querySelector('.check_classlist2')
+    let check_classlist = document.querySelector('#textttt')
+    // let check_classlist = document.querySelector('.check_classlist2')
     let new_classlist = document.querySelector('.new_classlist')
 
     let x = check_classlist.textContent.length
     console.log(x);
-    if (x>3 && x<=8) {
+    if (x>3 && x<8) {
         check_classlist.style.backgroundColor = 'yellow '
     } else {
         check_classlist.style.backgroundColor = 'aqua '
@@ -104,7 +121,7 @@
 
 
     <div id="library_inputs">
-        <input type="text" name="inp1" maxlength="3" placeholder="Enter some text">
+        <input type="text" name="inp1" minlength="2" maxlength="5" placeholder="Enter some text">
         <input type="text" name="inp2" value="123" placeholder="valid text">
         <input type="text" name="inp3" placeholder="invalid text">
     </div>
