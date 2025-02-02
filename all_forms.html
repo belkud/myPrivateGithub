@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ </head>
+ <body>
+
+<form action="" method="get">
+  <input type="text" id="meth" name="loc">
+  <input type="submit">
+  <input type="date">
+  <input type="checkbox" name="" id="">
+</form>
+
+<form action="" method="get" style="display: flex; gap: 10px;">
+
+  <div>
+    <select name="num" id="">
+      <option value="first">первый</option>
+      <option value="second">второй</option>
+      <option value="third">третий</option>
+    </select>
+  </div>
+  
+  <div>
+    <input type="submit">
+  </div>
+  
+</form>
+
+
+
+<style>
+    #meth {
+      background: palegreen;
+      border-color: transparent;
+      border-bottom: 1px solid;
+    }
+    
+    #meth:hover {
+    border: 2px solid red !important;  
+    }
+
+</style>
+
+
+<script>
+  let meth = document.querySelector('#meth')
+  // meth.ariaValueText = 5
+
+</script>
+
 
         
 <!--! action - путь на сервер -->
@@ -29,16 +75,7 @@
 
 <!--! все input оборачиваем в divы -->
 
-<form action="" method="get">
-  <input type="text" id="meth" name="loc">
-  <input type="submit">
-</form>
 
-<script>
-  let meth = document.querySelector('#meth')
-  // meth.ariaValueText = 5
-
-</script>
 
 
 <form id="" method="get" action="">          
@@ -166,7 +203,7 @@
 
 <style>
     div {
-        padding: 5px;
+        /* padding: 5px; */
     }
 </style>
 
