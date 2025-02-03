@@ -25,9 +25,9 @@
 <!-- Bootstrap 5 Quick Snippets -->
 
 
-<div class="d-flex flex-lg-column gap-3 px-3 ps-5 border border-primary rounded ">
-    <div class="flex_div m-3 col-6 bg-info">block 1</div>
-    <div class="flex_div m-3 col-3 bg-info">block 1</div>
+<div class="d-flex  flex-lg-column gap-3 px-3 ps-5 border border-primary rounded ">
+    <div class=" flex_div m-3 col-6 bg-info shadow-lg">block 1</div>
+    <div class="flex_div m-3 col-3 bg-info rounded-bottom">block 1</div>
     <div class="flex_div m-3 bg-info  bg-md-warning">block 111</div>
     <div class="flex_div p-2 bg-warning">block 2</div>
     <div class="flex_div fw-bold w-100 bg-primary rounded-2">block 3</div>
@@ -65,11 +65,59 @@
     }
 
 </style>
+<!--  Modal trigger button  -->
+<button
+    type="button"
+    class="btn btn-primary btn-lg"
+    data-bs-toggle="modal"
+    data-bs-target="#modalId"
+>
+    Launch
+</button>
+
+<!-- Modal Body-->
+<div
+    class="modal fade"
+    id="modalId"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Modal title
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">Add rows here</div>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <button
     type="button"
-    class="btn btn-danger2 btn-danger  btn-lg"
+    class="btn btn-danger2 btn-danger  btn-lg my-3 shadow"
     data-bs-toggle="modal"
     data-bs-target="#modalId"
 >
