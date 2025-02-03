@@ -1,23 +1,292 @@
 <!doctype html>
 <html lang="ru">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Демо Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
+    <style>
+        
+        .accordion-button:not(.collapsed) {
+            color: rgb(211, 36, 36);
+            background-color: #908fd9;
+            box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+        }
+        </style>
+
+</head>
 
   <body>
+
+<!--! крутая подсказка -->
+<!-- https://cheatsheet.getbootstrap.su/ -->
+
+<!--! установить расширение -->
+<!-- Bootstrap 5 Quick Snippets -->
+
+
+<div class="d-flex flex-lg-column gap-3 px-3 ps-5 border border-primary rounded ">
+    <div class="flex_div m-3 col-6 bg-info">block 1</div>
+    <div class="flex_div m-3 col-3 bg-info">block 1</div>
+    <div class="flex_div m-3 bg-info  bg-md-warning">block 111</div>
+    <div class="flex_div p-2 bg-warning">block 2</div>
+    <div class="flex_div fw-bold w-100 bg-primary rounded-2">block 3</div>
+</div>
+
+<style>
+    .flex_div {
+        /* font-weight:bold ; */
+        /* --bs-body-font-weight:200; */
+        /* background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important; */
+    }
+</style>
+
+
+
+
+
+<p class="placeholder-wave">
+    <span class="placeholder col-12"></span>
+</p>
+
+
+
+
+<!-- Button trigger modal -->
+
+<style>
+    .btn-danger2 {
+        --bs-btn-bg: #195cc1;
+
+    }
+    .modal {
+        --bs-modal-color: red ;
+
+    }
+
+</style>
+
+
+<button
+    type="button"
+    class="btn btn-danger2 btn-danger  btn-lg"
+    data-bs-toggle="modal"
+    data-bs-target="#modalId"
+>
+    Launch
+</button>
+
+
+
+<!-- Modal -->
+<div
+    class="modal fade"
+    id="modalId"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+>
+    <div
+        class="modal-dialog modal-sm modal-fullscreen"
+        role="document"
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Modal title
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">Body</div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="d-flex flex-row border border-success-subtle">
         <div class="col-4 bg-info">1</div>
         <div class="col-2 bg-success text-info">2</div>
     </div>
+    
+    <div class="text-opacity-100 fs-3 fw-bold text-warning text-opacity-50 
+    m-auto col-2 bg-success">12345 </div>
+    <div class="bg-primary fs-3  text-danger text-center">rrrrrrr</div>
 
     <h1 class="p-3 ms-5">Привет мир!</h1>
-    <input type="text" class="form-text bg-dark text-info">
-    <button type="button" class="btn position-fixed btn-primary ">Save changes</button>
+    
+<style>
+    .bg_image{
+        background-image: url(public/cat.jpg); 
+        background-position-y:-80px;
+    }
+</style>
 
+
+    <input
+        name=""
+        id=""
+        class="btn btn-primary"
+        type="text"
+        value="Button"
+    />
+    
+
+    <!-- <div id="carouselId" class="carousel bg_image slide py-5 lh-lg my-5"  data-bs-ride="carousel">
+        <ol class="carousel-indicators text-warning">
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="0"
+                class="active "
+                aria-current="true"
+                aria-label="First slide"
+                
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="1"
+                aria-label="Second slide"
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="2"
+                aria-label="Third slide"
+            ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img
+                    src="holder.js/900x500/auto/#777:#555/text:First slide"
+                    class="w-100 d-block"
+                    alt="First slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="holder.js/900x500/auto/#666:#444/text:Second slide"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="holder.js/900x500/auto/#666:#444/text:Third slide"
+                    class="w-100 d-block"
+                    alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+   
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="#">Main</a>
+        <a class="breadcrumb-item" href="#">Sub</a>
+        <span class="breadcrumb-item active" aria-current="page">Active</span>
+    </nav>
+    
+
+
+    <input type="text" class="form-text bg-dark text-info">
+    <button type="button" class="btn position-fixed btn-primary test3">Save changes</button>
+   
+   <style>
+        .test3 {
+            --bs-accordion-active-color: red;
+        }
+   </style>
+   
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                >
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+            >
+                <div class="accordion-body">
+                    This is the first item's accordion body.
+                </div>
+                <div class="accordion-body">
+                    This is the first item's accordion body 2.
+                </div>
+                <div class="accordion-body">
+                    This is the first item's accordion body 3.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
 
     <span class="placeholder col-12 bg-secondary"></span>
     <span class="placeholder col-12 bg-primary w-50"></span>
