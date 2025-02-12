@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document private</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:1024px)" href="style1024.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="style768.css">
@@ -18,6 +18,110 @@
 
 <body>
 
+
+<div id="test_text" style="display: flex; flex-direction:column; font-size: 3em;">
+    <div style="background: violet;">1</div>
+    <div style="background: violet;">2</div>
+    <div style="background: violet; margin-left: auto;">3</div>
+</div>
+
+<table id="test_table">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+
+<style>
+    .gdfg{
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        transform: ;
+        transition: ;
+    }
+
+
+#test_table tr td:nth-child(3)  {
+    background-color: aqua;
+}
+
+</style>
+
+    <script>
+        let test_text = document.querySelector('#test_text')
+        let name = 'Привет Катя'
+        console.log(name.length);
+        
+        for (let i = 0; i < name.length; i++) {
+            console.log(name[i]);
+        }
+        let score2 = 0
+        
+        // setInterval(() => {
+            test_text.innerHTML+=name[score2]
+            score2+=1            
+        // }, 1000);
+        
+
+        y = 10
+        console.log(y);
+
+        var y = 12
+        console.log(y);
+        
+        var y = 16
+        console.log(y);
+        
+        let y2 = 17
+        console.log('const y2 = ' + y2);
+
+        y2 = 'eee'
+        console.log('const y2 = ' + y2);
+
+        const y3 = 3
+        console.log('const y3 = ' + y3);
+
+
+
+    </script>
+
+
+
+
+
+
+    <div style="text-align: right;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, odio officiis culpa consequuntur obcaecati sapiente accusamus quas nostrum voluptas. Sunt numquam quos tenetur qui minus dolorum nobis, asperiores eaque ratione!<2><br></2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt ipsa earum quae delectus officia cum pariatur similique, suscipit optio assumenda repellat illo exercitationem distinctio, enim sunt provident maxime sint!
+        Reiciendis harum, deleniti aperiam molestiae sit dolor repudiandae placeat pariatur cupiditate enim inventore neque itaque, atque amet quia. Repudiandae impedit fugiat beatae culpa odit nobis! Error laudantium sunt beatae cumque.
+        Aut, repudiandae. Veritatis quas accusamus ratione eos! Modi, neque voluptates eligendi, molestias quos maxime nemo quia eos iusto omnis doloribus distinctio dignissimos veritatis mollitia illum provident ducimus aperiam recusandae tempora.
+    </div>
 <div>
     <div><img id="sprunki" style="transition: 1s;" src="public/sprunkiiii.webp" alt=""></div>
     <div><audio src="public/phase-4-durple.mp3"></audio></div>
@@ -29,11 +133,12 @@
     .extra_spr {
         width: 120px;
         height: 160px;
-        background-color: rgba(127, 255, 212, 0.21);
+        background-color: rgba(127, 255, 212, 0.471);
         position: absolute;
-        left: 60px;
-        top: 10px;
         z-index: 3;
+        margin-top: -300px;
+        margin-bottom: 300px;
+        margin-left: 50px;
         display: flex;
         text-align: center;
         align-items:end;
@@ -173,7 +278,7 @@ document.addEventListener('keypress',(event)=> {
     <h3>Inputs</h3>
 
 
-    <select name="color" id="">
+    <select name="color">
         <option value="red">red </option>
         <option value="yellow">yellow</option>
         <option value="green">green</option>
